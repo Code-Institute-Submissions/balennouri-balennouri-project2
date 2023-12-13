@@ -91,23 +91,24 @@ h1 {
 }
 
 /* Quiz area */
+.hide {
+    display: none;
+}
+
 #quiz-area {
-    background-color: #40689a;
-    border-radius: 20px;
-    padding: 15px 25px;
-    margin: 25px auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: fit-content;
     flex-direction: column;
-    box-shadow: 0 0 10px #ffffff;
+
 }
 
 #timer {
     margin-top: 5px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
     color: #ffffff;
     background-color: #003678;
     border-radius: 10px;
@@ -210,6 +211,8 @@ h1 {
 #answer-btn-area {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: 25px;
 }
 

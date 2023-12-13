@@ -1,36 +1,48 @@
-function startQuiz(){
+// Get elements by id
+
+// Variables that change during the quiz
+
+
+// Quiz structure
+
+function startGame() {
 
 }
 
-function quizArea() {
+function showQuestions() {
 
 }
 
-function questionDiv() {
+function selectAnswer() {
 
 }
 
-function answerBtnArea() {
+function nextQuest() {
 
 }
 
-function answerButton() {
+// Restart the game button after the questions
+
+function restartGameBtn() {
 
 }
 
-function nextQuestion() {
+function startTimer() {
 
 }
 
-function qLeftAnswerCorrect() {
+function showResult() {
 
 }
 
-function questionLeftCounter() {
-    
-}
-
-function correctAnswerCounter() {
+function questionCounter() {
 
 }
 
+function resetResult() {
+
+}
+
+function getAnswers() {
+
+}

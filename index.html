@@ -33,13 +33,17 @@
                     <ul id="rules-list">
                         <li><i class="fa-solid fa-circle-info" style="color: #ffffff"></i>
                             The quiz consists of 10 questions.</li>
-                        <li><i class="fa-solid fa-circle-info" style="color: #ffffff"></i>You have 30 seconds on each
+                        <li><i class="fa-solid fa-circle-info" style="color: #ffffff"></i>You have 30 seconds on
+                            each
                             question.</li>
-                        <li><i class="fa-solid fa-circle-info" style="color: #ffffff"></i>You can't change the answer
+                        <li><i class="fa-solid fa-circle-info" style="color: #ffffff"></i>You can't change the
+                            answer
                             after you click on one of the answers.</li>
-                        <li><i class="fa-solid fa-circle-info" style="color: #ffffff"></i>Every question has 4 answers,
+                        <li><i class="fa-solid fa-circle-info" style="color: #ffffff"></i>Every question has 4
+                            answers,
                             but only one is correct.</li>
-                        <li><i class="fa-solid fa-circle-info" style="color: #ffffff"></i>If you want to start over or
+                        <li><i class="fa-solid fa-circle-info" style="color: #ffffff"></i>If you want to start over
+                            or
                             end the quiz, click the Champions League logo at the top of the page.</li>
                     </ul>
                     <br>
@@ -51,36 +55,39 @@
                         Start Quiz
                     </button>
                 </div>
+                <!-- Quiz area with question and answer buttons-->
+                <div class="hide">
+                    <div id="quiz-area">
+                        <div id="timer">
+                            <p>
+                                <i class="fa-solid fa-stopwatch" style="color: #ffffff"></i>
+                            </p>
+                        </div>
+                        <div id="questions-div" class="questions-class"> Questions</div>
+                        <!-- Answer/options buttons for the quiz -->
+                        <div id="answer-btn-area">
+                            <button type="button" class="answer-button"></button>
+                            <button type="button" class="answer-button"></button>
+                            <button type="button" class="answer-button"></button>
+                            <button type="button" class="answer-button"></button>
+                        </div><!-- Next question button -->
+                        <div id="next-question">
+                            <button type="button" onclick="nextQueBtn()" id="next-question-btn" class="start-next-btn">
+                                Next question
+                            </button>
+                        </div><!-- Displays the number of the current question and the score -->
+                        <div id="q-left-answer-correct">
+                            <div id="questions-left">Questions:</div>
+                            <div id="questions-left-counter"></div>
+                            <div id="questions-left-p"> / 10</div>
+                            <div id="correct-answers">Correct:</div>
+                            <div id="correct-answers-counter"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-    <!-- Quiz area with question and answer buttons-->
-    <div id="quiz-area">
-        <div id="questions-div" class="questions-class"></div>
-        <div id="timer">
-            <p>
-                <i class="fa-solid fa-stopwatch" style="color: #ffffff"></i>
-            </p>
-        </div><!-- Answer/options buttons for the quiz -->
-        <div id="answer-btn-area">
-            <button type="button" class="answer-button"></button>
-            <button type="button" class="answer-button"></button>
-            <button type="button" class="answer-button"></button>
-            <button type="button" class="answer-button"></button>
-        </div><!-- Next question button -->
-        <div id="next-question">
-            <button type="button" onclick="nextQueBtn()" id="next-question-btn" class="start-next-btn">
-                Next question
-            </button>
-        </div><!-- Displays the number of the current question and the score -->
-        <div id="q-left-answer-correct">
-            <div id="questions-left">Questions:</div>
-            <div id="questions-left-counter"></div>
-            <div id="questions-left-p"> / 10</div>
-            <div id="correct-answers">Correct:</div>
-            <div id="correct-answers-counter"></div>
-        </div>
-    </div>
     <footer>
         <div id="social-media">
             <p>Visit the Champions League social media accounts and look at some nice goals and pictures.</p>
