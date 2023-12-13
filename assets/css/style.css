@@ -32,7 +32,7 @@ footer {
 }
 
 /* logo styling and rules styling */
-#main-box {
+#main-box-area {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +40,7 @@ footer {
 }
 
 
-#logo-head {
+.logo {
     background-color: #40689a;
     border-radius: 20px;
     padding: 15px 25px;
@@ -67,12 +67,7 @@ h1 {
     text-align: center;
 }
 
-#welcome {
-    display: flex;
-
-}
-
-#rules-box {
+.rules-box {
     padding-top: 5px;
     display: flex;
     flex-direction: column;
@@ -95,7 +90,7 @@ h1 {
     display: none;
 }
 
-#quiz-area {
+.question-area {
     display: flex;
     justify-content: center;
     align-items: center;
