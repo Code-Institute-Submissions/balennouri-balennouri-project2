@@ -54,14 +54,14 @@ footer {
 }
 
 .cl-logo {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-h1 {
+h1 h3 {
     font-family: 'Kalnia', sans-serif;
     font-size: larger;
     text-align: center;
@@ -74,6 +74,7 @@ h1 {
     justify-content: center;
     align-items: center;
     margin: 7px;
+    font-size: larger;
 }
 
 #rules-list {
@@ -112,11 +113,13 @@ h1 {
     box-shadow: 0 0 10px #ffffff;
     width: 30%;
     height: 25px;
+    padding: 15px;
 
 }
 
 #q-left-answer-correct {
     display: flex;
+    flex-direction: row;
     margin-bottom: 5px;
 }
 
@@ -171,6 +174,7 @@ h1 {
 }
 
 #start-quiz-btn {
+    margin-top: 10px;
     padding: 10px;
     color: #ffffff;
     background-color: #003678;
@@ -219,8 +223,9 @@ h1 {
     border: solid 2px #ffffff;
     transition: 0.5s;
     letter-spacing: 1px;
-    padding: 10px;
-    width: 280px;
+    padding: 15px;
+    width: 350px;
+    max-width: 200px;
     height: 40px;
     margin-bottom: 20px;
 }
@@ -257,4 +262,30 @@ h1 {
 
 #social-media p {
     font-size: larger;
+}
+
+/* Media queries */
+/* Smaller screens like smartphones */
+@media (min-width: 300px) and (max-width: 500px) {
+    .cl-logo {
+        width: 250px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 300px;
+    }
+    #questions-left-counter, #questions-left-p, #questions-left, #correct-answers, #correct-answers-counter {
+        font-size: medium;
+        margin-left:20px;
+    }
+    #questions-left {
+        width: 81px;
+    }
+    .answer-button {
+        width: 200px;
+    }
 }
