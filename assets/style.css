@@ -1,0 +1,262 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Lato:ital,wght@1,300&display=swap');
+
+/*Asterisk wildcard selector */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    background-color: #003678;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+/* logo styling and rules styling */
+#main-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#logo-head {
+    background-color: #40689a;
+    border-radius: 20px;
+    padding: 15px 25px;
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    flex-direction: column;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.cl-logo {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Kalnia', sans-serif;
+    font-size: larger;
+    text-align: center;
+}
+
+#welcome {
+    display: flex;
+
+}
+
+#rules-box {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+}
+
+#rules-list {
+    text-align: center;
+    list-style-type: none;
+}
+
+.fa-solid {
+    padding: 1px 5px;
+}
+
+/* Quiz area */
+#quiz-area {
+    background-color: #40689a;
+    border-radius: 20px;
+    padding: 15px 25px;
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    flex-direction: column;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+#timer {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #003678;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    border: solid 2px #ffffff;
+    box-shadow: 0 0 10px #ffffff;
+    width: 30%;
+    height: 25px;
+
+}
+
+#q-left-answer-correct {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+#questions-left {
+    width: 120px;
+    height: 50px;
+    margin-left: 40px;
+    color: #ffffff;
+    font-size: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#questions-left-counter {
+    width: 5%;
+    height: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    padding-left: 4px;
+    padding-top: 20px;
+}
+
+#questions-left-p {
+    width: 12%;
+    height: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+#correct-answers {
+    width: 100px;
+    height: 50px;
+    margin-left: 70px;
+    color: #ffffff;
+    font-size: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#correct-answers-counter {
+    width: 10%;
+    height: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+/* Button styling */
+#start-quiz {
+    margin: 10px auto;
+}
+
+#start-quiz-btn {
+    padding: 10px;
+    color: #ffffff;
+    background-color: #003678;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    border: solid 2px #ffffff;
+    transition: 0.5s;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+#start-quiz-btn:hover {
+    background-color: #40689a;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+#next-question-btn {
+    padding: 10px;
+    color: #ffffff;
+    background-color: #003678;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    border: solid 2px #ffffff;
+    transition: 0.5s;
+    box-shadow: 0 0 10px #ffffff;
+    margin-bottom: 10px;
+}
+
+#next-question-btn:hover {
+    background-color: #40689a;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+#answer-btn-area {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+}
+
+.answer-button {
+    box-shadow: 0 0 10px #ffffff;
+    color: #ffffff;
+    border-radius: 10px;
+    background-color: #003678;
+    border: solid 2px #ffffff;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    padding: 10px;
+    width: 280px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.answer-button:hover {
+    background-color: #40689a;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+
+/*Social media links for CL accounts*/
+#social-media {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#social-list {
+    display: flex;
+    justify-content: center;
+    gap: 85%;
+    font-size: xx-large;
+}
+
+#social-list i {
+    color: #ffffff;
+}
+
+#social-list li {
+    list-style-type: none;
+}
+
+#social-media p {
+    font-size: larger;
+}

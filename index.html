@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A quiz about the Uefa Champions Leauge tournament">
+    <meta name="keywords" content="Uefa Champions Leauge, Football, Quiz, Game">
+    <!--Link for CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Uefa Champions Leauge Quiz</title>
+</head>
+
+<body>
+    <header>
+        <!--Logo (home) and the heading -->
+        <div><a href="index.html"><img class="cl-logo" src="assets/images/cl.png" alt="Champions leauge logo"></a>
+        </div>
+    </header>
+    <!--Rules area-->
+    <main>
+        <div id="main-box-area">
+            <div id="logo-head">
+                <div id="welcome">
+                    <h1>Welcome to the Champions league quiz!</h1>
+                </div>
+                <br>
+                <div>
+                    <h3>Quiz Rules</h3>
+                </div>
+                <div id="rules-box">
+                    <ul id="rules-list">
+                        <li><i class="fa-solid fa-circle-info" style="color: #ffffff"></i>
+                            The quiz consists of 10 questions.</li>
+                        <li><i class="fa-solid fa-circle-info" style="color: #ffffff"></i>You have 30 seconds on each
+                            question.</li>
+                        <li><i class="fa-solid fa-circle-info" style="color: #ffffff"></i>You can't change the answer
+                            after you click on one of the answers.</li>
+                        <li><i class="fa-solid fa-circle-info" style="color: #ffffff"></i>Every question has 4 answers,
+                            but only one is correct.</li>
+                        <li><i class="fa-solid fa-circle-info" style="color: #ffffff"></i>If you want to start over or
+                            end the quiz, click the Champions League logo at the top of the page.</li>
+                    </ul>
+                    <br>
+                    <h3>Good Luck!</h3>
+                </div>
+                <!--Start the quiz button-->
+                <div id="start-quiz">
+                    <button type="button" onclick="startBtnQuiz()" id="start-quiz-btn" class="start-next-btn">
+                        Start Quiz
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Quiz area with question and answer buttons-->
+    <div id="quiz-area">
+        <div id="questions-div" class="questions-class"></div>
+        <div id="timer">
+            <p>
+                <i class="fa-solid fa-stopwatch" style="color: #ffffff"></i>
+            </p>
+        </div><!-- Answer/options buttons for the quiz -->
+        <div id="answer-btn-area">
+            <button type="button" class="answer-button"></button>
+            <button type="button" class="answer-button"></button>
+            <button type="button" class="answer-button"></button>
+            <button type="button" class="answer-button"></button>
+        </div><!-- Next question button -->
+        <div id="next-question">
+            <button type="button" onclick="nextQueBtn()" id="next-question-btn" class="start-next-btn">
+                Next question
+            </button>
+        </div><!-- Displays the number of the current question and the score -->
+        <div id="q-left-answer-correct">
+            <div id="questions-left">Questions:</div>
+            <div id="questions-left-counter"></div>
+            <div id="questions-left-p"> / 10</div>
+            <div id="correct-answers">Correct:</div>
+            <div id="correct-answers-counter"></div>
+        </div>
+    </div>
+    <footer>
+        <div id="social-media">
+            <p>Visit the Champions League social media accounts and look at some nice goals and pictures.</p>
+            <br>
+            <ul id="social-list">
+                <li>
+                    <a href="https://www.instagram.com/championsleague/" target="_blank" rel="noopener"
+                        aria-label="Visit Champions Leauge Instagram page (opens in a new tab)"><i
+                            class="fab fa-instagram"></i></a>
+                </li>
+                <li><a href="https://www.youtube.com/@UEFA" target="_blank" rel="noopener"
+                        aria-label="Visit Champions Leauge YouTube page (opens in a new tab)"><i
+                            class="fab fa-youtube-square"></i></a></li>
+                <li>
+                    <a href="https://www.facebook.com/ChampionsLeague/?locale=sv_SE" target="_blank" rel="noopener"
+                        aria-label="Visit Champions Leauge Facebook page (opens in a new tab)"><i
+                            class="fab fa-facebook"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!--Script for JS, font awesome-->
+    <script src="https://kit.fontawesome.com/bef058a563.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
