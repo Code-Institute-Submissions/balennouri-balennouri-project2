@@ -1,21 +1,26 @@
 // Get elements by id
-
 const heading = document.getElementById('heading')
 const welcomeRules = document.getElementById('welcome-rules')
 const startQuizBtn = document.getElementById('start-quiz-btn')
 const quizArea = document.getElementById('quiz-area')
-const questionsDiv = document.getElementById('questions-div')
 const answerBtnArea = document.getElementById('answer-btn-area')
 const qLeftAnswerCorrect = document.getElementById('q-left-answer-correct')
 
-// Variables that change during the quiz
+// Variables to be defined
+
+startQuizBtn.addEventListener('click', startGame)
+
+//DOM
 
 
 // Quiz structure
 
 function startGame() {
-
+console.log('started')
+welcomeRules.classList.add('hide')
+quizArea.classList.remove('hide')
 }
+
 
 function showQuestions() {
 

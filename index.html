@@ -23,7 +23,7 @@
     <main>
         <div id="main-box-area">
             <div id="logo-head" class="logo">
-                <div id="welcome-rules" class="welcome-rules hide">
+                <div id="welcome-rules" class="welcome-rules">
                     <h1>Welcome to the Champions league quiz!</h1>
                     <br>
                     <div>
@@ -50,19 +50,19 @@
                         <h3>Good Luck!</h3>
                     </div>
                     <!--Start the quiz button-->
-                    <button type="button" onclick="startBtnQuiz()" id="start-quiz-btn" class="start-next-btn">
+                    <button type="button" id="start-quiz-btn" class="start-next-btn">
                         Start Quiz
                     </button>
                 </div>
                 <!-- Quiz area with question and answer buttons-->
-                <div class="">
-                    <div id="quiz-area" class="question-area">
+                <div id="quiz-area" class="hide">
+                    <div class="quiz-area question-area">
                         <div id="timer">
                             <p>
                                 <i class="fa-solid fa-stopwatch" style="color: #ffffff"></i>
                             </p>
                         </div>
-                        <div id="questions-div" class="questions-class"> Questions</div>
+                        <div id="questions-div" class="questions-class"></div>
                         <!-- Answer/options buttons for the quiz -->
                         <div id="answer-btn-area">
                             <button type="button" class="answer-button"></button>
@@ -70,7 +70,7 @@
                             <button type="button" class="answer-button"></button>
                             <button type="button" class="answer-button"></button>
                         </div><!-- Next question button -->
-                        <button type="button" onclick="nextQueBtn()" id="next-question-btn" class="start-next-btn">
+                        <button type="button" id="next-question-btn" class="start-next-btn">
                             Next question
                         </button><!-- Displays the number of the current question and the score -->
                         <div id="q-left-answer-correct">
