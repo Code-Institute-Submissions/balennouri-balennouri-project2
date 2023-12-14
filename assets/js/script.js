@@ -16,9 +16,9 @@ startQuizBtn.addEventListener('click', startGame)
 // Quiz structure
 
 function startGame() {
-console.log('started')
-welcomeRules.classList.add('hide')
-quizArea.classList.remove('hide')
+    console.log('started')
+    welcomeRules.classList.add('hide')
+    quizArea.classList.remove('hide')
 }
 
 
