@@ -31,6 +31,10 @@ footer {
     flex-direction: column;
 }
 
+i {
+    color: #ffffff;
+}
+
 /* logo styling and rules styling */
 #main-box-area {
     display: flex;
