@@ -21,5 +21,4 @@ function showQuestion() {
 }
 
 function selectAnswer() {
-
 }
