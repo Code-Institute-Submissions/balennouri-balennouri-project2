@@ -1,5 +1,6 @@
 /* Creating an Array containing all the questions and answers in the boolean format */
-const questions = [{
+console.log(test)
+let questions = [{
     numb: 1,
     question: "Which player has scored the most goals in Champions League history?",
     answer: "Cristiano Ronaldo",
