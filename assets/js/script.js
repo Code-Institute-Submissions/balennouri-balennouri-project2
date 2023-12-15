@@ -1,13 +1,22 @@
 // Get elements by id
 const welcomeRules = document.getElementById('welcome-rules')
-const startQuizBtn = document.getElementById('start-quiz-btn')
 const quizArea = document.getElementById('quiz-area')
 const questionElement = document.getElementById('question')
-const answerButtonElement = document.getElementById('answer-btn-area')
 
-let currentQuestionIndex
+// variables to be defined
 
-startQuizBtn.addEventListener('click', startGame)
+let shuffledQuestions;
+let currentQuestionIndex;
+let correctAnswer;
+let score;
+let timeLeft;
+
+//Dom
+
+document.addEventListener("DOMContentLoaded", function () {
+    const startQuizBtn = document.getElementById('start-quiz-btn')
+    startQuizBtn.addEventListener("click", startGame)
+});
 
 // Quiz game structure
 
@@ -23,10 +32,7 @@ function setNextQuestion() {
 }
 
 function showQuestion() {
-    questionElement.innerText = questions.question
+    questionElement.innerText = questions.questions
 }
 
 function selectAnswer() {}
-
-
-/* Creating an Array containing all the questions and answers*/
