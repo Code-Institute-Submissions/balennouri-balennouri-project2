@@ -239,6 +239,15 @@ h1 h3 {
     box-shadow: 0 0 10px #ffffff;
 }
 
+.wrong-btn {
+    background-color: red;
+}
+
+.correct-btn {
+    background-color: green;
+
+}
+
 
 /*Social media links for CL accounts*/
 #social-media {
