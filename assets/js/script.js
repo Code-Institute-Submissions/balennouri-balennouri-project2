@@ -3,6 +3,7 @@ const welcomeRules = document.getElementById('welcome-rules')
 const startQuizBtn = document.getElementById('start-quiz-btn')
 const quizArea = document.getElementById('quiz-area')
 const questionElement = document.getElementById('question')
+const answerButtonsElement = document.getElementById('answer-btn-area')
 
 // variables to be defined
 
@@ -11,8 +12,9 @@ let currentQuestionIndex;
 let correctAnswer;
 let score;
 let timeLeft;
+let timerInterval;
 
-//Dom
+// Wait fo the DOM to finish loading before running the game
 
 document.addEventListener("DOMContentLoaded", function () {
     startQuizBtn.addEventListener("click", startGame)
