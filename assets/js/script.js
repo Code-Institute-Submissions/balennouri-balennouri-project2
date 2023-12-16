@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
  */
 
 function startGame() {
-    welcomeRules.classList.add('hide')
+    welcomeRules.style.display = 'none';
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     quizArea.classList.remove('hide')
