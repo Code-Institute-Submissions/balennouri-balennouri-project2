@@ -14,7 +14,9 @@ let score;
 let timeLeft;
 let timerInterval;
 
-// Wait fo the DOM to finish loading before running the game
+/*
+waits for DOM to load before executing the first function 
+*/
 
 document.addEventListener("DOMContentLoaded", function () {
     startQuizBtn.addEventListener("click", startGame)
@@ -22,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Quiz game structure
 /**
- * StartGame function hide the welcome rules page when you click the start quiz button.
+  StartGame function hide the welcome rules page when you click the start quiz button.
  */
 
 function startGame() {
