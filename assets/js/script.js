@@ -14,7 +14,6 @@ let currentQuestionIndex = 0;
 /**
   StartGame function hide the welcome rules page when you click the start quiz button.
  */
-
 function startGame() {
     welcomeRules.style.display = 'none';
     shuffledQuestions = questions.sort(() => Math.random() - .5)
@@ -23,6 +22,9 @@ function startGame() {
     showQuestion(0)
 }
 
+/*
+Shuffle the next question when you click on the question
+*/
 function setNextQuestion() {
     showQuestion(shuffledQuestions[currentQuestionIndex])
     currentQuestionIndex++;
