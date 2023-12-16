@@ -14,13 +14,6 @@ let score;
 let timeLeft;
 let timerInterval;
 
-/*
-waits for DOM to load before executing the first function 
-*/
-
-document.addEventListener("DOMContentLoaded", function () {
-    startQuizBtn.addEventListener("click", startGame)
-});
 
 // Quiz game structure
 /**
@@ -37,6 +30,7 @@ function startGame() {
 
 function setNextQuestion() {
     showQuestion(shuffledQuestions[currentQuestionIndex])
+    currentQuestionIndex++;
 }
 
 function showQuestion(question) {
