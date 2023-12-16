@@ -27,6 +27,13 @@ header {
     text-align: center;
 }
 
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
 footer {
     display: flex;
     flex-direction: column;
