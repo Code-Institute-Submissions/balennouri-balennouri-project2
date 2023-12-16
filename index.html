@@ -52,13 +52,21 @@
                                 <i class="fa-solid fa-stopwatch"></i>
                             </p>
                         </div>
-                        <div id="question" class="questions-class">Question</div>
+                        <span id="question" class="questions-class">Question</span>
                         <!-- Answer/options buttons for the quiz -->
                         <div id="answer-btn-area">
-                            <button type="button" class="answer-button" data-type="answer-1"></button>
-                            <button type="button" class="answer-button" data-type="answer-2"></button>
-                            <button type="button" class="answer-button" data-type="answer-3"></button>
-                            <button type="button" class="answer-button" data-type="answer-4"></button>
+                            <div class="answer-button">
+                                <span></span>
+                            </div>
+                            <div class="answer-button">
+                                <span></span>
+                            </div>
+                            <div class="answer-button">
+                                <span></span>
+                            </div>
+                            <div class="answer-button">
+                                <span></span>
+                            </div>
                         </div><!-- Next question button -->
                         <button type="button" onclick="setNextQuestion()" id="next-question-btn" class="start-next-btn">
                             Next Question

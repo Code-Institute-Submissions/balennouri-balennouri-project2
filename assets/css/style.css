@@ -241,6 +241,9 @@ h1 h3 {
 }
 
 .answer-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0 0 10px #ffffff;
     color: #ffffff;
     border-radius: 10px;
