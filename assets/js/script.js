@@ -5,7 +5,7 @@ const quizArea = document.getElementById('quiz-area')
 const answerButtonsElement = document.getElementById('answer-btn-area')
 const questionElement = document.getElementById('question')
 const nextQuizBtn = document.getElementById('next-question-btn')
-const scoreCounter = document.getElementById('q-left-answer-correct')
+const scoreCounter = document.querySelector('q-left-answer-correct')
 
 // variables to be defined
 
@@ -22,7 +22,7 @@ function startGame() {
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     quizArea.classList.remove('hide')
-    showQuestion(0)
+    showQuestion(1)
 }
 
 
@@ -56,3 +56,4 @@ nextQuizBtn.onclick = () => {
 /*
 Function ScoreBoard keep the scoreboard upadating
 */
+function scoreBoard() {}
