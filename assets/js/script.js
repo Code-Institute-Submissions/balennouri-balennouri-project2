@@ -5,6 +5,7 @@ const quizArea = document.getElementById('quiz-area')
 const answerButtonsElement = document.getElementById('answer-btn-area')
 const questionElement = document.getElementById('question')
 const nextQuizBtn = document.getElementById('next-question-btn')
+const scoreCounter = document.getElementById('q-left-answer-correct')
 
 // variables to be defined
 
@@ -51,3 +52,7 @@ nextQuizBtn.onclick = () => {
         console.log("Questions completed")
     }
 }
+
+/*
+Function ScoreBoard keep the scoreboard upadating
+*/

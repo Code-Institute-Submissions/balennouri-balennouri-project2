@@ -146,10 +146,16 @@ h1 h3 {
     text-align: center;
 }
 
-#q-left-answer-correct {
+#q-left-answer-correct span {
     display: flex;
     flex-direction: row;
-    margin-bottom: 5px;
+    margin: 5px 0;
+    gap: 5px;
+    font-size: larger;
+}
+
+.gold {
+    color: gold;
 }
 
 #questions-left {
