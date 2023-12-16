@@ -4,6 +4,7 @@ const startQuizBtn = document.getElementById('start-quiz-btn')
 const quizArea = document.getElementById('quiz-area')
 const answerButtonsElement = document.getElementById('answer-btn-area')
 const questionElement = document.getElementById('question')
+const nextQuizBtn = document.getElementById('next-question-btn')
 
 // variables to be defined
 
@@ -25,9 +26,13 @@ function startGame() {
 /*
 Shuffle the next question when you click on the question
 */
-function setNextQuestion() {
-    showQuestion(shuffledQuestions[currentQuestionIndex])
-    currentQuestionIndex++;
+nextQuizBtn.onclick = ()=>{
+    if (currentQuestionIndex < questions.length -1) {
+        currentQuestionIndex++
+        showQuestion(currentQuestionIndex)
+    }else{
+        console.log("questions completed")
+    }
 }
 
 function showQuestion(index) {

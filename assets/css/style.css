@@ -113,6 +113,8 @@ h1 h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 400px;
+    padding: 0 50px;
 }
 
 #timer {
