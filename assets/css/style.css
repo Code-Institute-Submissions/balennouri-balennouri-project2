@@ -153,9 +153,7 @@ h1 h3 {
 }
 
 #questions-left {
-    width: 120px;
     height: 50px;
-    margin-left: 40px;
     color: #ffffff;
     font-size: 20px;
     padding-top: 20px;
@@ -163,7 +161,6 @@ h1 h3 {
 }
 
 #questions-left-counter {
-    width: 5%;
     height: 50px;
     color: #ffffff;
     font-size: 20px;
@@ -174,13 +171,12 @@ h1 h3 {
 #questions-left-p {
     width: 12%;
     height: 50px;
-    color: #ffffff;
+    color: gold;
     font-size: 20px;
     padding-top: 20px;
 }
 
 #correct-answers {
-    width: 132px;
     height: 50px;
     margin-left: 70px;
     color: #ffffff;
@@ -192,7 +188,7 @@ h1 h3 {
 #correct-answers-counter {
     width: 10%;
     height: 50px;
-    color: #ffffff;
+    color:gold;
     font-size: 20px;
     padding-top: 20px;
 }
@@ -331,11 +327,6 @@ h1 h3 {
     #correct-answers,
     #correct-answers-counter {
         font-size: medium;
-        margin-left: 20px;
-    }
-
-    #questions-left {
-        width: 81px;
     }
 
     .answer-button {
