@@ -12,6 +12,7 @@ let shuffledQuestions;
 let currentQuestionIndex = 0;
 
 // Quiz game structure
+
 /**
   StartGame function hide the welcome rules page when you click the start quiz button.
  */
@@ -23,26 +24,30 @@ function startGame() {
     showQuestion(0)
 }
 
-/*
-Shuffle the next question when you click on the question
-*/
-nextQuizBtn.onclick = ()=>{
-    if (currentQuestionIndex < questions.length -1) {
-        currentQuestionIndex++
-        showQuestion(currentQuestionIndex)
-    }else{
-        console.log("questions completed")
-    }
-}
+
+/**
+  showQuestion function show the questions, the 4 answer and the next button for the quiz   
+ */
 
 function showQuestion(index) {
     let que_tag = '<span>' + questions[index].question + '</span>'
-    let option_tag = '<div class="answer-button">'+ questions[index].options[0] +'<span></span></div>' +
-        '<div class="answer-button">'+ questions[index].options[1] +'<span></span></div>' +
-        '<div class="answer-button">'+ questions[index].options[2] +'<span></span></div>' +
-        '<div class="answer-button">'+ questions[index].options[3] +'<span></span></div>'
+    let option_tag = '<div class="answer-button">' + questions[index].options[0] + '<span></span></div>' +
+        '<div class="answer-button">' + questions[index].options[1] + '<span></span></div>' +
+        '<div class="answer-button">' + questions[index].options[2] + '<span></span></div>' +
+        '<div class="answer-button">' + questions[index].options[3] + '<span></span></div>'
     questionElement.innerHTML = que_tag
     answerButtonsElement.innerHTML = option_tag
 }
 
-function selectAnswer() {}
+/*
+ nextQuizBtn function does so you can click next question
+*/
+
+nextQuizBtn.onclick = () => {
+    if (currentQuestionIndex < questions.length - 1) {
+        currentQuestionIndex++
+        showQuestion(currentQuestionIndex)
+    } else {
+        console.log("Questions completed")
+    }
+}
