@@ -40,7 +40,7 @@
                         </ul>
                     </article>
                     <!--Start the quiz button-->
-                    <button type="button" id="start-quiz-btn" class="start-next-btn">
+                    <button type="button" onclick="startGame()" id="start-quiz-btn" class="start-next-btn">
                         Start Quiz
                     </button>
                 </section>
@@ -60,7 +60,7 @@
                             <button type="button" class="answer-button" data-type="answer-3"></button>
                             <button type="button" class="answer-button" data-type="answer-4"></button>
                         </div><!-- Next question button -->
-                        <button type="button" id="next-question-btn" class="start-next-btn">
+                        <button type="button" onclick="setNextQuestion()" id="next-question-btn" class="start-next-btn">
                             Next Question
                         </button><!-- Displays the number of the current question and the score -->
                         <div id="q-left-answer-correct">
