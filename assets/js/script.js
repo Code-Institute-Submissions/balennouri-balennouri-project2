@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Quiz game structure
+/**
+ * StartGame function hide the welcome rules page when you click the start quiz button.
+ */
 
 function startGame() {
     welcomeRules.classList.add('hide')

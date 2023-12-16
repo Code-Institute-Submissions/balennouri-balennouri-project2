@@ -24,16 +24,26 @@ header {
     align-items: center;
     flex-direction: column;
     margin-top: 40px;
+    text-align: center;
 }
 
 footer {
     display: flex;
     flex-direction: column;
     margin: 0 5px;
+    text-align: center;
 }
 
 i {
     color: #ffffff;
+}
+
+.linebreak {
+    margin-bottom: 10px;
+}
+
+.hide {
+    display: none;
 }
 
 /* logo styling and rules styling */
@@ -48,7 +58,7 @@ i {
 .logo {
     background-color: #40689a;
     border-radius: 20px;
-    padding: 15px 25px;
+    padding: 15px 0;
     margin: 25px auto;
     display: flex;
     justify-content: center;
@@ -70,21 +80,22 @@ h1 h3 {
     font-family: 'Kalnia', sans-serif;
     font-size: larger;
     text-align: center;
+    display: flex;
 }
 
 .rules-box {
     padding-top: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 7px;
     font-size: larger;
+    width: fit-content;
 }
 
 #rules-list {
-    text-align: center;
-    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin: 15px 50px;
 }
 
 .fa-solid {
@@ -92,9 +103,6 @@ h1 h3 {
 }
 
 /* Quiz area */
-.hide {
-    display: none;
-}
 
 .question-area {
     display: flex;
@@ -119,7 +127,11 @@ h1 h3 {
     width: 30%;
     height: 25px;
     padding: 15px;
+}
 
+.questions-class {
+    margin: 0 15px;
+    text-align: center;
 }
 
 #q-left-answer-correct {
@@ -254,9 +266,9 @@ h1 h3 {
 #social-media {
     display: flex;
     text-align: center;
-    flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
+    flex-direction: column;
 }
 
 #social-list {
@@ -292,13 +304,20 @@ h1 h3 {
     .logo {
         width: 300px;
     }
-    #questions-left-counter, #questions-left-p, #questions-left, #correct-answers, #correct-answers-counter {
+
+    #questions-left-counter,
+    #questions-left-p,
+    #questions-left,
+    #correct-answers,
+    #correct-answers-counter {
         font-size: medium;
-        margin-left:20px;
+        margin-left: 20px;
     }
+
     #questions-left {
         width: 81px;
     }
+
     .answer-button {
         width: 200px;
     }
