@@ -11,6 +11,7 @@ const scoreCounter = document.querySelector('q-left-answer-correct')
 
 let currentQuestionIndex = 0;
 
+
 // Quiz game structure
 
 /**
@@ -54,4 +55,7 @@ function nextQueBtn() {
 /*
  * Function ScoreBoard keep the scoreboard upadating
  */
-function scoreBoard() {}
+function scoreBoard() {
+    let totalQuesCounTag = '<span><p>'+ currentQuestionIndex +'</p> <p class="gold">/</p> <p class="gold">'+ currentQuestionIndex +'</p></span>'
+    scoreCounter.innerHTML = totalQuesCounTag
+}
