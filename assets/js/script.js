@@ -5,12 +5,12 @@ const quizArea = document.getElementById('quiz-area')
 const answerButtonsElement = document.getElementById('answer-btn-area')
 const questionElement = document.getElementById('question')
 const nextQuizBtn = document.getElementById('next-question-btn')
-const bottom_ques_counter = quizArea.querySelector('q-left-answer-correct')
+
 
 // variables to be defined
 
-let currentQuestionIndex = 0;
-
+let questionNumber = 0;
+let que_numb = 1;
 
 // Quiz game structure
 
@@ -19,14 +19,15 @@ let currentQuestionIndex = 0;
  */
 function startGame() {
     welcomeRules.style.display = 'none';
-    currentQuestionIndex = 0
+    questionNumber = 0
     quizArea.classList.remove('hide')
     showQuestion(0)
+    queCounter(1)
 }
 
 
 /**
- * showQuestion function show the questions, the 4 answer and the next button for the quiz   
+ * showQuestion function show the questions, the 4 answer and the next button for the quiz.   
  */
 
 function showQuestion(index) {
@@ -44,9 +45,12 @@ function showQuestion(index) {
  */
 
 function nextQueBtn() {
-    if (currentQuestionIndex < questions.length - 1) {
-        currentQuestionIndex++
-        showQuestion(currentQuestionIndex)
+    if (questionNumber < questions.length) {
+        questionNumber++
+        que_numb++
+        showQuestion(questionNumber)
+        queCounter(que_numb)
+
     } else {
         console.log("Questions completed")
     }
@@ -55,4 +59,9 @@ function nextQueBtn() {
 /*
  * Function queCounter keep the scoreboard upadating
  */
-function queCounter() {}
+
+function queCounter(index) {
+    const bottomQuestionNr = document.getElementById('q-left-answer-correct')
+    let totalQuestionsTag = '<span><p>' + index + '</p> <p class="gold">/</p> <p class="gold">' + questions.length + '</p></span>'
+    bottomQuestionNr.innerHTML = totalQuestionsTag;
+}
