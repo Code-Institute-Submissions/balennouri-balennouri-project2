@@ -15,7 +15,7 @@ let currentQuestionIndex = 0;
 // Quiz game structure
 
 /**
-  StartGame function hide the welcome rules page when you click the start quiz button.
+ * StartGame function hide the welcome rules page when you click the start quiz button.
  */
 function startGame() {
     welcomeRules.style.display = 'none';
@@ -27,7 +27,7 @@ function startGame() {
 
 
 /**
-  showQuestion function show the questions, the 4 answer and the next button for the quiz   
+ * showQuestion function show the questions, the 4 answer and the next button for the quiz   
  */
 
 function showQuestion(index) {
@@ -41,8 +41,8 @@ function showQuestion(index) {
 }
 
 /*
- nextQuizBtn function does so you can click next question
-*/
+ * nextQuizBtn function does so you can click next question
+ */
 
 nextQuizBtn.onclick = () => {
     if (currentQuestionIndex < questions.length - 1) {
@@ -54,6 +54,6 @@ nextQuizBtn.onclick = () => {
 }
 
 /*
-Function ScoreBoard keep the scoreboard upadating
-*/
+ * Function ScoreBoard keep the scoreboard upadating
+ */
 function scoreBoard() {}
