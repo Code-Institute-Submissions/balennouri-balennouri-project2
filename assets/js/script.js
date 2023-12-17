@@ -5,7 +5,7 @@ const quizArea = document.getElementById('quiz-area')
 const answerButtonsElement = document.getElementById('answer-btn-area')
 const questionElement = document.getElementById('question')
 const nextQuizBtn = document.getElementById('next-question-btn')
-const scoreCounter = document.querySelector('q-left-answer-correct')
+const bottom_ques_counter = quizArea.querySelector('q-left-answer-correct')
 
 // variables to be defined
 
@@ -53,9 +53,6 @@ function nextQueBtn() {
 }
 
 /*
- * Function ScoreBoard keep the scoreboard upadating
+ * Function queCounter keep the scoreboard upadating
  */
-function scoreBoard() {
-    let totalQuesCounTag = '<span><p>'+ currentQuestionIndex +'</p> <p class="gold">/</p> <p class="gold">'+ currentQuestionIndex +'</p></span>'
-    scoreCounter.innerHTML = totalQuesCounTag
-}
+function queCounter() {}
