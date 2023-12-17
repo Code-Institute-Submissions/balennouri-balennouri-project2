@@ -38,6 +38,22 @@ function showQuestion(index) {
         '<div class="answer-button">' + questions[index].options[3] + '<span></span></div>'
     questionElement.innerHTML = que_tag
     answerButtonsElement.innerHTML = option_tag
+    const optionsButtons = answerButtonsElement.querySelectorAll(".answer-button");
+    for (let i = 0; i < optionsButtons.length; i++) {
+        optionsButtons[i].setAttribute("onclick", "optionSelected(this)");
+    }
+}
+
+function optionSelected(answer) {
+    let userAns = answer.innerText;
+    let correctAns = questions[questionNumber].answer;
+    if (userAns == correctAns) {
+        answer.classList.add('.correct-btn');
+        console.log("correct answer");
+    }else {
+        answer.classList.add('.wrong-btn');
+        console.log("wrong answer");
+    }
 }
 
 /*
@@ -45,7 +61,7 @@ function showQuestion(index) {
  */
 
 function nextQueBtn() {
-    if (questionNumber < questions.length) {
+    if (questionNumber < questions.length - 1) {
         questionNumber++
         que_numb++
         showQuestion(questionNumber)

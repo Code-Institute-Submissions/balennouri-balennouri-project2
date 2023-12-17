@@ -273,11 +273,11 @@ h1 h3 {
     box-shadow: 0 0 10px #ffffff;
 }
 
-.wrong-btn {
+.answer-btn-area .answer-button .wrong-btn {
     background-color: red;
 }
 
-.correct-btn {
+.answer-btn-area .answer-button .correct-btn {
     background-color: green;
 
 }
