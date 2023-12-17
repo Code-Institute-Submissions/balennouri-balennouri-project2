@@ -44,7 +44,7 @@ function showQuestion(index) {
  * nextQuizBtn function does so you can click next question
  */
 
-nextQuizBtn.onclick = () => {
+function nextQueBtn() {
     if (currentQuestionIndex < questions.length - 1) {
         currentQuestionIndex++
         showQuestion(currentQuestionIndex)
