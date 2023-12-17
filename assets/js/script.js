@@ -9,7 +9,6 @@ const scoreCounter = document.querySelector('q-left-answer-correct')
 
 // variables to be defined
 
-let shuffledQuestions;
 let currentQuestionIndex = 0;
 
 // Quiz game structure
@@ -19,10 +18,9 @@ let currentQuestionIndex = 0;
  */
 function startGame() {
     welcomeRules.style.display = 'none';
-    shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     quizArea.classList.remove('hide')
-    showQuestion(1)
+    showQuestion(0)
 }
 
 
@@ -31,7 +29,7 @@ function startGame() {
  */
 
 function showQuestion(index) {
-    let que_tag = '<span>' + questions[index].question + '</span>'
+    let que_tag = '<span>' + questions[index].numb + '. ' + questions[index].question + '</span>'
     let option_tag = '<div class="answer-button">' + questions[index].options[0] + '<span></span></div>' +
         '<div class="answer-button">' + questions[index].options[1] + '<span></span></div>' +
         '<div class="answer-button">' + questions[index].options[2] + '<span></span></div>' +
