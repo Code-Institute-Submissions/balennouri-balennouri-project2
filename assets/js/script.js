@@ -44,16 +44,27 @@ function showQuestion(index) {
     }
 }
 
+/**
+ * This function does so you can see if your answer is correct by showing green or red button,
+ * when you click on it.
+ */
+
 function optionSelected(answer) {
     let userAns = answer.innerText;
     let correctAns = questions[questionNumber].answer;
     if (userAns == correctAns) {
         answer.classList.add("correct-btn");
         console.log("correct answer");
-    }else {
+    } else {
         answer.classList.add("wrong-btn");
         console.log("wrong answer");
     }
+    
+    /**
+     *  Once the player/user selected all options
+     */
+
+
 }
 
 /*
