@@ -92,7 +92,7 @@ function optionSelected(answer) {
     }
 
     /**
-     *  Once the player/user selected a option, disabled all the othe questions.
+     *  Once the player/user selected a option, disabled all the other questions.
      */
 
     for (let i = 0; i < alloptions; i++) {
