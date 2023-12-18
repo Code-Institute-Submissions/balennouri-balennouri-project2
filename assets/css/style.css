@@ -274,6 +274,48 @@ h1 h3 {
     pointer-events: none;
 }
 
+/* Result socre area */
+
+.result-box {
+    display: none;
+}
+
+.result-box > p {
+    font-size: larger;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quit-quiz-btn {
+    padding: 10px;
+    color: #ffffff;
+    background-color: #003678;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    border: solid 2px #ffffff;
+    transition: 0.5s;
+    box-shadow: 0 0 10px #ffffff;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+.restart-quiz-btn {
+    padding: 10px;
+    color: #ffffff;
+    background-color: #003678;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    border: solid 2px #ffffff;
+    transition: 0.5s;
+    box-shadow: 0 0 10px #ffffff;
+    margin-bottom: 10px;
+    width: 70%;
+    margin-top: 10px;
+}
+
 
 
 /*Social media links for CL accounts*/
