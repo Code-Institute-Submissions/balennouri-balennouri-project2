@@ -10,6 +10,16 @@ const result_box = document.querySelector('.result-box')
 const restart_quiz = document.querySelector('.restart-quiz-btn')
 const quit_quiz = document.querySelector('.quit-quiz-btn')
 
+// Onclick
+
+/**
+ * when you click on the quit button it reload the page.
+ */
+
+quit_quiz.onclick = () => {
+    window.location.reload();
+}
+
 // variables to be defined
 
 let questionNumber = 0;
@@ -133,7 +143,7 @@ function showResultbox() {
     result_box.style.display = "block"
     const scoreText = document.querySelector('.score_text')
     if (userScore > 6) {
-        let scoreTag = '<p class="score_text">Good job you had a great score! <p>'  + userScore + '</p> of <p>' + questions.length + '</p></p>';
+        let scoreTag = '<p class="score_text">Good job you had a great score! <p>' + userScore + '</p> of <p>' + questions.length + '</p></p>';
         scoreText.innerHTML = scoreTag;
     } else if (userScore > 1) {
         let scoreTag = '<p class="score_text">Your score was not so good! <p>' + userScore + '</p> of <p>' + questions.length + '</p></p>';
