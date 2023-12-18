@@ -177,6 +177,19 @@ function startTimer(time) {
             clearInterval(timeCounter)
             timeCount.innerText = "00"
             nextQuizBtn.style.display = "block";
+
+            /**
+             * When the time is finnish you see the right answer and you can click on next question.
+             */
+
+            let correctAns = questions[questionNumber].answer;
+            let alloptions = answerButtonsElement.children.length;
+
+            for (let i = 0; i < alloptions; i++) {
+                if (answerButtonsElement.children[i].innerText == correctAns) {
+                    answerButtonsElement.children[i].classList.add("correct-btn");
+                }
+            }
         }
     }
 }
