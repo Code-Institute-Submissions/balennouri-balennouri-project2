@@ -52,18 +52,26 @@ function showQuestion(index) {
 function optionSelected(answer) {
     let userAns = answer.innerText;
     let correctAns = questions[questionNumber].answer;
+    let alloptions = answerButtonsElement.children.length;
     if (userAns == correctAns) {
         answer.classList.add("correct-btn");
         console.log("correct answer");
     } else {
         answer.classList.add("wrong-btn");
         console.log("wrong answer");
+
+        /**
+         * If answer is incorrect then show the correct answer automatically.
+         */
     }
-    
+
     /**
-     *  Once the player/user selected all options
+     *  Once the player/user selected a option, disabled all the othe questions.
      */
 
+    for (let i = 0; i < alloptions; i++) {
+        answerButtonsElement.children[i].classList.add("disabled")
+    }
 
 }
 

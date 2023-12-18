@@ -281,6 +281,13 @@ h1 h3 {
     background-color: green;
 }
 
+/* Disabled class */
+
+.disabled {
+    pointer-events: none;
+}
+
+
 
 /*Social media links for CL accounts*/
 #social-media {
