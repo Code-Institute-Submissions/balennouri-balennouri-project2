@@ -63,6 +63,12 @@ function optionSelected(answer) {
         /**
          * If answer is incorrect then show the correct answer automatically.
          */
+
+        for (let i = 0; i < alloptions; i++) {
+            if (answerButtonsElement.children[i].innerText == correctAns) {
+                answerButtonsElement.children[i].setAttribute("class", "option correct");
+            }
+        }
     }
 
     /**
