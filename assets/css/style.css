@@ -331,7 +331,7 @@ h1 h3 {
     }
 }
 
-@media (min-width 900px) {
+@media (min-width: 900px) {
 
     #next-question-btn:hover {
         background-color: #40689a;
