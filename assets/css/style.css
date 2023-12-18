@@ -277,11 +277,11 @@ h1 h3 {
 }
 
 .wrong-btn {
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.449);
 }
 
 .correct-btn {
-    background-color: green;
+    background-color: rgba(0, 248, 0, 0.449);
 }
 
 /* Disabled class */
