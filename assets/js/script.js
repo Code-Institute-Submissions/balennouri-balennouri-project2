@@ -71,7 +71,7 @@ function optionSelected(answer) {
 
         for (let i = 0; i < alloptions; i++) {
             if (answerButtonsElement.children[i].innerText == correctAns) {
-                answerButtonsElement.children[i].setAttribute("class", "option correct");
+                answerButtonsElement.children[i].classList.add("correct-btn");
             }
         }
     }
