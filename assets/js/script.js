@@ -16,6 +16,7 @@ let questionNumber = 0;
 let que_numb = 1;
 let timeCounter;
 let timeValue = 15;
+let userScore = 0;
 
 // Quiz game structure
 
@@ -62,6 +63,7 @@ function optionSelected(answer) {
     let correctAns = questions[questionNumber].answer;
     let alloptions = answerButtonsElement.children.length;
     if (userAns == correctAns) {
+        userScore += 1;
         answer.classList.add("correct-btn");
         console.log("correct answer");
     } else {
@@ -120,10 +122,21 @@ function queCounter(index) {
     bottomQuestionNr.innerHTML = totalQuestionsTag;
 }
 
-function  showResultbox() {
+function showResultbox() {
     welcomeRules.style.display = 'none';
     quizArea.classList.add('hide')
     result_box.style.display = "block"
+    const scoreText = document.querySelector('.score_text')
+    if (userScore > 6) {
+        let scoreTag = '<p class="score_text">Good job you had a great score! <p>'  + userScore + '</p> of <p>' + questions.length + '</p></p>';
+        scoreText.innerHTML = scoreTag;
+    } else if (userScore > 1) {
+        let scoreTag = '<p class="score_text">Your score was not so good! <p>' + userScore + '</p> of <p>' + questions.length + '</p></p>';
+        scoreText.innerHTML = scoreTag;
+    } else {
+        let scoreTag = '<p class="score_text">Your score was not so good!<p>' + userScore + '</p> of <p>' + questions.length + '</p></p>';
+        scoreText.innerHTML = scoreTag;
+    }
 }
 
 /**
