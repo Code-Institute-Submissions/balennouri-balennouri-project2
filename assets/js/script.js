@@ -180,6 +180,7 @@ function startTimer(time) {
 
             /**
              * When the time is finnish you see the right answer and you can click on next question.
+             * Also so you cant make a choose after the time is finnish.
              */
 
             let correctAns = questions[questionNumber].answer;
@@ -190,6 +191,11 @@ function startTimer(time) {
                     answerButtonsElement.children[i].classList.add("correct-btn");
                 }
             }
+            for (let i = 0; i < alloptions; i++) {
+                answerButtonsElement.children[i].classList.add("disabled")
+            }
+        
+            nextQuizBtn.style.display = "block";
         }
     }
 }
