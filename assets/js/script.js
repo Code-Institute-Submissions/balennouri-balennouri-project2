@@ -122,6 +122,11 @@ function queCounter(index) {
     bottomQuestionNr.innerHTML = totalQuestionsTag;
 }
 
+/**
+ * Show the result after all the quiz questions, shows also two buttons,
+ * restart quiz and quit quiz.
+ */
+
 function showResultbox() {
     welcomeRules.style.display = 'none';
     quizArea.classList.add('hide')
