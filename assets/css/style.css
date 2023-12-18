@@ -345,6 +345,11 @@ h1 h3 {
 /* Media queries */
 /* Smaller screens like smartphones */
 @media (min-width: 300px) and (max-width: 500px) {
+
+    .quiz-area {
+        width: 250px ;
+    }
+
     .cl-logo {
         width: 250px;
         height: 250px;
