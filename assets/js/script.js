@@ -5,12 +5,14 @@ const quizArea = document.getElementById('quiz-area')
 const answerButtonsElement = document.getElementById('answer-btn-area')
 const questionElement = document.getElementById('question')
 const nextQuizBtn = document.getElementById('next-question-btn')
-
+const timeCount = document.querySelector('.timer_sec')
 
 // variables to be defined
 
 let questionNumber = 0;
 let que_numb = 1;
+let timeCounter;
+let timeValue = 15;
 
 // Quiz game structure
 
@@ -23,6 +25,7 @@ function startGame() {
     quizArea.classList.remove('hide')
     showQuestion(0)
     queCounter(1)
+    startTimer (15) 
 }
 
 
@@ -49,7 +52,9 @@ function showQuestion(index) {
  * when you click on it.
  */
 
+
 function optionSelected(answer) {
+    clearInterval(timeCounter);
     let userAns = answer.innerText;
     let correctAns = questions[questionNumber].answer;
     let alloptions = answerButtonsElement.children.length;
@@ -91,6 +96,8 @@ function nextQueBtn() {
         que_numb++
         showQuestion(questionNumber)
         queCounter(que_numb)
+        clearInterval(timeCounter);
+        startTimer(timeValue);
 
     } else {
         console.log("Questions completed")
@@ -105,4 +112,30 @@ function queCounter(index) {
     const bottomQuestionNr = document.getElementById('q-left-answer-correct')
     let totalQuestionsTag = '<span><p>' + index + '</p> <p class="gold">/</p> <p class="gold">' + questions.length + '</p></span>'
     bottomQuestionNr.innerHTML = totalQuestionsTag;
+}
+
+/**
+ * Clock on the quiz
+ */
+
+function startTimer (time) {
+    timeCounter = setInterval(timer, 1000);
+    function timer() {
+        timeCount.innerText = time;
+        time--;
+
+        /**
+         * Add zero when the time become 9 or lower.
+         * Clear time and stop on 00 when the time is finnish 
+         */
+
+        if(time < 9){
+            let addzero = timeCount.innerText;
+            timeCount.innerText = "0" + addzero;
+        }
+        if(time < 0) {
+            clearInterval(timeCounter)
+            timeCount.innerText = "00"
+        }
+    }
 }

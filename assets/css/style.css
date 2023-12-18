@@ -136,9 +136,12 @@ h1 h3 {
     letter-spacing: 1px;
     border: solid 2px #ffffff;
     box-shadow: 0 0 10px #ffffff;
-    width: 30%;
     height: 25px;
     padding: 15px;
+}
+
+.timer_sec {
+    gap: 2px;
 }
 
 .questions-class {
