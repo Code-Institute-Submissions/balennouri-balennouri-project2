@@ -1,4 +1,5 @@
 // Get elements by id
+
 const welcomeRules = document.getElementById('welcome-rules')
 const startQuizBtn = document.getElementById('start-quiz-btn')
 const quizArea = document.getElementById('quiz-area')
@@ -33,6 +34,7 @@ let userScore = 0;
 /**
  * StartGame function hide the welcome rules page when you click the start quiz button.
  */
+
 function startGame() {
     welcomeRules.style.display = 'none';
     questionNumber = 0
@@ -41,7 +43,6 @@ function startGame() {
     queCounter(1)
     startTimer(15)
 }
-
 
 /**
  * showQuestion function show the questions, the 4 answer and the next button for the quiz.   
@@ -65,7 +66,6 @@ function showQuestion(index) {
  * This function does so you can see if your answer is correct by showing green or red button,
  * when you click on it.
  */
-
 
 function optionSelected(answer) {
     clearInterval(timeCounter);
@@ -100,7 +100,6 @@ function optionSelected(answer) {
     }
 
     nextQuizBtn.style.display = "block";
-
 }
 
 /*
