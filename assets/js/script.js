@@ -139,6 +139,7 @@ function startTimer(time) {
         if (time < 0) {
             clearInterval(timeCounter)
             timeCount.innerText = "00"
+            nextQuizBtn.style.display = "block";
         }
     }
 }
