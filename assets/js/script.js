@@ -25,7 +25,7 @@ function startGame() {
     quizArea.classList.remove('hide')
     showQuestion(0)
     queCounter(1)
-    startTimer (15) 
+    startTimer(15)
 }
 
 
@@ -84,6 +84,8 @@ function optionSelected(answer) {
         answerButtonsElement.children[i].classList.add("disabled")
     }
 
+    nextQuizBtn.style.display = "block";
+
 }
 
 /*
@@ -98,7 +100,7 @@ function nextQueBtn() {
         queCounter(que_numb)
         clearInterval(timeCounter);
         startTimer(timeValue);
-
+        nextQuizBtn.style.display = "none";
     } else {
         console.log("Questions completed")
     }
@@ -118,8 +120,9 @@ function queCounter(index) {
  * Clock on the quiz
  */
 
-function startTimer (time) {
+function startTimer(time) {
     timeCounter = setInterval(timer, 1000);
+
     function timer() {
         timeCount.innerText = time;
         time--;
@@ -129,11 +132,11 @@ function startTimer (time) {
          * Clear time and stop on 00 when the time is finnish 
          */
 
-        if(time < 9){
+        if (time < 9) {
             let addzero = timeCount.innerText;
             timeCount.innerText = "0" + addzero;
         }
-        if(time < 0) {
+        if (time < 0) {
             clearInterval(timeCounter)
             timeCount.innerText = "00"
         }
