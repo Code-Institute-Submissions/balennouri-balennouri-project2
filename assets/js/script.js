@@ -6,6 +6,9 @@ const answerButtonsElement = document.getElementById('answer-btn-area')
 const questionElement = document.getElementById('question')
 const nextQuizBtn = document.getElementById('next-question-btn')
 const timeCount = document.querySelector('.timer_sec')
+const result_box = document.querySelector('.result-box')
+const restart_quiz = document.querySelector('.restart-quiz-btn')
+const quit_quiz = document.querySelector('.quit-quiz-btn')
 
 // variables to be defined
 
@@ -103,6 +106,7 @@ function nextQueBtn() {
         nextQuizBtn.style.display = "none";
     } else {
         console.log("Questions completed")
+        showResultbox();
     }
 }
 
@@ -114,6 +118,12 @@ function queCounter(index) {
     const bottomQuestionNr = document.getElementById('q-left-answer-correct')
     let totalQuestionsTag = '<span><p>' + index + '</p> <p class="gold">/</p> <p class="gold">' + questions.length + '</p></span>'
     bottomQuestionNr.innerHTML = totalQuestionsTag;
+}
+
+function  showResultbox() {
+    welcomeRules.style.display = 'none';
+    quizArea.classList.add('hide')
+    result_box.style.display = "block"
 }
 
 /**

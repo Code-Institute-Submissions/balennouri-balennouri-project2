@@ -278,9 +278,11 @@ h1 h3 {
 
 .result-box {
     display: none;
+    margin: 50px;
+    letter-spacing: 1px;
 }
 
-.result-box > p {
+.result-box>p {
     font-size: larger;
     margin: 10px 0;
     display: flex;
@@ -395,4 +397,15 @@ h1 h3 {
         background-color: #40689a;
         box-shadow: 0 0 10px #ffffff;
     }
+
+    .restart-quiz-btn:hover {
+        background-color: #40689a;
+        box-shadow: 0 0 10px #ffffff;
+    }
+
+    .quit-quiz-btn:hover {
+        background-color: #40689a;
+        box-shadow: 0 0 10px #ffffff;
+    }
+
 }
