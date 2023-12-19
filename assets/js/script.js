@@ -142,13 +142,13 @@ function showResultbox() {
     result_box.style.display = "block"
     const scoreText = document.querySelector('.score_text')
     if (userScore > 6) {
-        let scoreTag = '<p class="score_text">Good job you had a great score! <p>' + userScore + '</p> of <p>' + questions.length + '</p></p>';
+        let scoreTag = '<p class="score_text">Good job you had a great score! </p><p>' + userScore + ' of ' + questions.length + '</p>';
         scoreText.innerHTML = scoreTag;
     } else if (userScore > 1) {
-        let scoreTag = '<p class="score_text">Your score was not so good! <p>' + userScore + '</p> of <p>' + questions.length + '</p></p>';
+        let scoreTag = '<p class="score_text">Your score was not so good! </p><p>' + userScore + ' of ' + questions.length + '</p>';
         scoreText.innerHTML = scoreTag;
     } else {
-        let scoreTag = '<p class="score_text">Your score was not so good!<p>' + userScore + '</p> of <p>' + questions.length + '</p></p>';
+        let scoreTag = '<p class="score_text">Your score was not so good! </p><p>' + userScore + ' of ' + questions.length + '</p>';
         scoreText.innerHTML = scoreTag;
     }
 }
