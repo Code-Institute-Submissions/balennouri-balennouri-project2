@@ -31,6 +31,7 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100px;
 }
 
@@ -91,7 +92,6 @@ h1 h3 {
     font-family: 'Kalnia', sans-serif;
     font-size: larger;
     text-align: center;
-    display: flex;
 }
 
 .rules-box {
@@ -350,7 +350,7 @@ h1 h3 {
 @media (min-width: 300px) and (max-width: 500px) {
 
     .quiz-area {
-        width: 250px ;
+        width: 250px;
     }
 
     .cl-logo {
