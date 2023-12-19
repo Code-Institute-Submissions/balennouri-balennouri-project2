@@ -1,14 +1,12 @@
 // Get elements by id
 
 const welcomeRules = document.getElementById('welcome-rules');
-const startQuizBtn = document.getElementById('start-quiz-btn');
 const quizArea = document.getElementById('quiz-area');
 const answerButtonsElement = document.getElementById('answer-btn-area');
 const questionElement = document.getElementById('question');
 const nextQuizBtn = document.getElementById('next-question-btn');
 const timeCount = document.querySelector('.timer_sec');
 const result_box = document.querySelector('.result-box');
-const restart_quiz = document.querySelector('.restart-quiz-btn');
 const quit_quiz = document.querySelector('.quit-quiz-btn');
 
 // questions for the quiz
