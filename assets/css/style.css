@@ -249,7 +249,6 @@ h1 h3 {
     border-radius: 10px;
     background-color: #003678;
     border: solid 2px #ffffff;
-    transition: 0.5s;
     padding: 20px 15px;
     width: 350px;
     max-width: 200px;
@@ -282,7 +281,11 @@ h1 h3 {
 
 .result-box>p {
     font-size: larger;
-    margin: 10px 0;
+    margin: 5px 0;
+}
+
+.score_text {
+    margin-bottom: 5px;
 }
 
 .quit-quiz-btn {
@@ -405,6 +408,10 @@ h1 h3 {
     .quit-quiz-btn:hover {
         background-color: #40689a;
         box-shadow: 0 0 10px #ffffff;
+    }
+
+    .answer-button {
+        transition: 0.5s;
     }
 
 }
