@@ -38,7 +38,10 @@ let userScore = 0;
 function startGame() {
     welcomeRules.style.display = 'none';
     questionNumber = 0
+    que_numb = 1;
+    userScore = 0;
     quizArea.classList.remove('hide')
+    result_box.style.display = 'none';
     showQuestion(0)
     queCounter(1)
     startTimer(15)
