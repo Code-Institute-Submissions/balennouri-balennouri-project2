@@ -33,23 +33,31 @@ As a user of this website:
 
 ![Welcome and Rules]()
 
+![Quiz/ game area]()
+
+![Result box area]()
+
 ### Mobile
 
-![Welcome and Rules]()
+![Welcome and Rules phone]()
+
+![Quiz/ game area phone]()
+
+![Result box area phone]()
 
 ## Design
 
-The website has a clean layout with the Champions League colors and the logo as a header for the website.
-When you come in on the website you see the logo, the rules for the quiz and the start button. Underneath the game area, in the footer area you can see my social media links.
+The website has a clean layout with the Champions League colors and the logo as a header for the website. When you come in on the website you see the logo, the rules for the quiz and the start button. Underneath the game area, in the foot area, you can see my social media links.
 
 ### Colours
 
-The colors used for the website were mainly chosen from the colors that Champions League use. The colors and the logo is very important. When the user jumps in to the website they will get a feeling of the Champions League because of the right colors and the logo.
-![colour-pallete]()
+The colors used for the website were mainly chosen from the colors that the Champions League use. The colors and the logo are very important. When the user jumps on to the website, they will get a feeling of the Champions League because of the right colors and the logo.
+
+![colour-pallete](assets/images/readme-images/color.png)
 
 ### Typography
 
-Google fonts were used to get the right fonts and all the fonts were imported from there.
+Google fonts were used to get the right fonts and all the fonts were imported from there. The font for the heading in the welcome and rules area is a font called Kalnia and for the rest of the content the Lato font is used. In case If the user's browser doesn't read the fonts that are chosen, I put in a second font called Sans-serif for both of them.
 
 ## Features
 
@@ -57,20 +65,20 @@ The Champions League website is made up from a single page and it’s hiding the
 
 ### Existing Features
 
-### Header And Navigation Bar
+### Header
 
 ![header])
 
-Featured at the top and center of the page the user will see the header that is the Champions League logo.
-The header is above the welcome section and the game area.
-The header is always visible
-The header is linked with home page so if user click on the Champions League logo(header) the website will refresh.
+- Featured at the top and center of the page the user will see the header that is the Champions League logo.
+- The header is above the welcome section and the game area.
+- The header is always visible.
+- The header is linked with home page so if user click on the Champions League logo(header) the website will refresh.
 
 ### Social Media Section
 
 ![Social media]()
 
-Underneath the welcome and the game area the user will see the social media icons and who have made the quiz.
-There are three social media icons, Instagram, LinkedIn and GitHub.
-The social media links takes the user to Balen Nouri social media account.
-When the user click on one of the icons it will open in a new tab.
+- Underneath the welcome and the game area the user will see the social media icons and who have made the quiz.
+- There are three social media icons, Instagram, LinkedIn and GitHub.
+- The social media links takes the user to Balen Nouri social media account.
+- When the user click on one of the social media icons it will open in a new tab.
