@@ -94,3 +94,43 @@ The Champions League website is made up from a single page and it’s hiding the
 - There are three social media icons, Instagram, LinkedIn and GitHub.
 - The social media links takes the user to Balen Nouri social media account.
 - When the user click on one of the social media icons it will open in a new tab.
+
+## Future Features
+
+## Technologies Used
+
+## Testing
+
+### Validator Testing
+
+#### HTML
+
+#### CSS
+
+#### JS
+
+### Lighthouse Testing
+
+#### Welcome page
+
+#### Game page
+
+#### Result page
+
+### Known Bugs
+
+#### Solved Bugs
+
+#### Unfixed Bugs
+
+## Deployment
+
+## Credit
+
+### Content And Code
+
+## Logo And Questions
+
+## Acknowledgements
+
+[Back to top](#uefa-champions-leauge)
