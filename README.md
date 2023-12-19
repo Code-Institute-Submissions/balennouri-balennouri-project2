@@ -67,16 +67,28 @@ The Champions League website is made up from a single page and it’s hiding the
 
 ### Header
 
-![header])
+![header](assets/images/readme-images/header.png)
 
 - Featured at the top and center of the page the user will see the header that is the Champions League logo.
 - The header is above the welcome section and the game area.
 - The header is always visible.
 - The header is linked with home page so if user click on the Champions League logo(header) the website will refresh.
 
+### Welcome/Rules section
+
+![Welcome](assets/images/readme-images/welcomerules.png)
+
+### Quiz area
+
+![Quiz](assets/images/readme-images/gamearea.png)
+
+### Result area
+
+![Result](assets/images/readme-images/result.box.png)
+
 ### Social Media Section
 
-![Social media]()
+![Social media](assets/images/readme-images/footer.png)
 
 - Underneath the welcome and the game area the user will see the social media icons and who have made the quiz.
 - There are three social media icons, Instagram, LinkedIn and GitHub.
