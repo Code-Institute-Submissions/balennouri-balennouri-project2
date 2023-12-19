@@ -69,10 +69,10 @@ let questions = [{
   {
     numb: 7,
     question: "Who has the most assists in Champions League history?",
-    answer: "Ryan Giggs",
+    answer: "Cristiano Ronaldo",
     options: [
       "Leo Messi",
-      "Ryan Giggs",
+      "Cristiano Ronaldo",
       "Xavi",
       "Mesut Özil"
     ]
