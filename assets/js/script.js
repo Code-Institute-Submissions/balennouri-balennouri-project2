@@ -1,15 +1,15 @@
 // Get elements by id
 
-const welcomeRules = document.getElementById('welcome-rules')
-const startQuizBtn = document.getElementById('start-quiz-btn')
-const quizArea = document.getElementById('quiz-area')
-const answerButtonsElement = document.getElementById('answer-btn-area')
-const questionElement = document.getElementById('question')
-const nextQuizBtn = document.getElementById('next-question-btn')
-const timeCount = document.querySelector('.timer_sec')
-const result_box = document.querySelector('.result-box')
-const restart_quiz = document.querySelector('.restart-quiz-btn')
-const quit_quiz = document.querySelector('.quit-quiz-btn')
+const welcomeRules = document.getElementById('welcome-rules');
+const startQuizBtn = document.getElementById('start-quiz-btn');
+const quizArea = document.getElementById('quiz-area');
+const answerButtonsElement = document.getElementById('answer-btn-area');
+const questionElement = document.getElementById('question');
+const nextQuizBtn = document.getElementById('next-question-btn');
+const timeCount = document.querySelector('.timer_sec');
+const result_box = document.querySelector('.result-box');
+const restart_quiz = document.querySelector('.restart-quiz-btn');
+const quit_quiz = document.querySelector('.quit-quiz-btn');
 
 // questions for the quiz
 
@@ -134,7 +134,7 @@ let questions = [{
 
 quit_quiz.onclick = () => {
     window.location.reload();
-}
+};
 
 // variables to be defined
 
@@ -152,14 +152,14 @@ let userScore = 0;
 
 function startGame() {
     welcomeRules.style.display = 'none';
-    questionNumber = 0
+    questionNumber = 0;
     que_numb = 1;
     userScore = 0;
-    quizArea.classList.remove('hide')
+    quizArea.classList.remove('hide');
     result_box.style.display = 'none';
-    showQuestion(0)
-    queCounter(1)
-    startTimer(15)
+    showQuestion(0);
+    queCounter(1);
+    startTimer(15);
 }
 
 /**
@@ -167,13 +167,13 @@ function startGame() {
  */
 
 function showQuestion(index) {
-    let que_tag = '<span>' + questions[index].numb + '. ' + questions[index].question + '</span>'
+    let que_tag = '<span>' + questions[index].numb + '. ' + questions[index].question + '</span>';
     let option_tag = '<button class="answer-button">' + questions[index].options[0] + '<span></span></button>' +
         '<button class="answer-button">' + questions[index].options[1] + '<span></span></button>' +
         '<button class="answer-button">' + questions[index].options[2] + '<span></span></button>' +
-        '<button class="answer-button">' + questions[index].options[3] + '<span></span></button>'
-    questionElement.innerHTML = que_tag
-    answerButtonsElement.innerHTML = option_tag
+        '<button class="answer-button">' + questions[index].options[3] + '<span></span></button>';
+    questionElement.innerHTML = que_tag;
+    answerButtonsElement.innerHTML = option_tag;
     const optionsButtons = answerButtonsElement.querySelectorAll(".answer-button");
     for (let i = 0; i < optionsButtons.length; i++) {
         optionsButtons[i].setAttribute("onclick", "optionSelected(this)");
@@ -214,7 +214,7 @@ function optionSelected(answer) {
      */
 
     for (let i = 0; i < alloptions; i++) {
-        answerButtonsElement.children[i].classList.add("disabled")
+        answerButtonsElement.children[i].classList.add("disabled");
     }
 
     nextQuizBtn.style.display = "block";
@@ -226,15 +226,15 @@ function optionSelected(answer) {
 
 function nextQueBtn() {
     if (questionNumber < questions.length - 1) {
-        questionNumber++
-        que_numb++
-        showQuestion(questionNumber)
-        queCounter(que_numb)
+        questionNumber++;
+        que_numb++;
+        showQuestion(questionNumber);
+        queCounter(que_numb);
         clearInterval(timeCounter);
         startTimer(timeValue);
         nextQuizBtn.style.display = "none";
     } else {
-        console.log("Questions completed")
+        console.log("Questions completed");
         showResultbox();
     }
 }
@@ -244,8 +244,8 @@ function nextQueBtn() {
  */
 
 function queCounter(index) {
-    const bottomQuestionNr = document.getElementById('q-left-answer-correct')
-    let totalQuestionsTag = '<span><p>' + index + '</p> <p class="gold">/</p> <p class="gold">' + questions.length + '</p></span>'
+    const bottomQuestionNr = document.getElementById('q-left-answer-correct');
+    let totalQuestionsTag = '<span><p>' + index + '</p> <p class="gold">/</p> <p class="gold">' + questions.length + '</p></span>';
     bottomQuestionNr.innerHTML = totalQuestionsTag;
 }
 
@@ -256,9 +256,9 @@ function queCounter(index) {
 
 function showResultbox() {
     welcomeRules.style.display = 'none';
-    quizArea.classList.add('hide')
-    result_box.style.display = "block"
-    const scoreText = document.querySelector('.score_text')
+    quizArea.classList.add('hide');
+    result_box.style.display = "block";
+    const scoreText = document.querySelector('.score_text');
     if (userScore > 6) {
         let scoreTag = '<p class="score_text">Good job you had a great score! </p><p>' + userScore + ' of ' + questions.length + '</p>';
         scoreText.innerHTML = scoreTag;
@@ -292,8 +292,8 @@ function startTimer(time) {
             timeCount.innerText = "0" + addzero;
         }
         if (time < 0) {
-            clearInterval(timeCounter)
-            timeCount.innerText = "00"
+            clearInterval(timeCounter);
+            timeCount.innerText = "00";
             nextQuizBtn.style.display = "block";
 
             /**
@@ -310,7 +310,7 @@ function startTimer(time) {
                 }
             }
             for (let i = 0; i < alloptions; i++) {
-                answerButtonsElement.children[i].classList.add("disabled")
+                answerButtonsElement.children[i].classList.add("disabled");
             }
         
             nextQuizBtn.style.display = "block";
