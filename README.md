@@ -181,8 +181,18 @@ A live version of the website and the project can be accessed here:
 
 ### Content And Code
 
+- The icons used on the social media were taken from [Font Awesome.](https://fontawesome.com)
+- The screenshot at the top of the ReadMe was built from [Ami Responsive.](https://ui.dev/amiresponsive)
+- The wireframes for the ReadMe were made by [Balsamiq](https://balsamiq.com/)
+- I got a lot of my soloutions to my JavaScript file in this youtube [video.](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1282s&ab_channel=WebDevSimplified)
+
 ## Logo And Questions
 
+- The Champions Leauge logo did i get from [Cleanpng.](https://www.cleanpng.com/png-201718-uefa-champions-league-2018-uefa-champion-5245771/)
+- For the quiz questions, I got them from my own knowledge of football.
+
 ## Acknowledgements
+
+This site was developed as my second portfolio project for the Code Institute course in Full Stack Software Development. I would like to thank my mentor David Bowers, the slack community and the Code Institute team.
 
 [Back to top](#uefa-champions-leauge)
