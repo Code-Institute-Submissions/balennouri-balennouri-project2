@@ -194,18 +194,12 @@ function optionSelected(answer) {
         userScore += 1;
         answer.classList.add("correct-btn");
     } else {
-        answer.classList.add("wrong-btn");
+        answer.classList.add("wrong-btn"); }
 
         /**
          * If answer is incorrect then show the correct answer automatically.
          */
 
-        for (let i = 0; i < alloptions; i++) {
-            if (answerButtonsElement.children[i].innerText == correctAns) {
-                answerButtonsElement.children[i].classList.add("correct-btn");
-            }
-        }
-    }
 
     /**
      *  Once the player/user selected a option, disabled all the other questions.
