@@ -31,19 +31,15 @@ As a user of this website:
 
 ### Desktop
 
-![Welcome and Rules]()
+![Welcome and Rules](assets/images/readme-images/readme-wf/wfdatawelcome.png)
 
-![Quiz/ game area]()
+![Quiz/ game area](assets/images/readme-images/readme-wf/wfdataquizarea.png)
 
-![Result box area]()
+![Result box area](assets/images/readme-images/readme-wf/wfdataresult.png)
 
 ### Mobile
 
-![Welcome and Rules phone]()
-
-![Quiz/ game area phone]()
-
-![Result box area phone]()
+![Welcome,quiz and result](assets/images/readme-images/readme-wf/wfmobil.png)
 
 ## Design
 
@@ -97,7 +93,35 @@ The Champions League website is made up from a single page and it’s hiding the
 
 ## Future Features
 
+Features to be added in the future:
+
+- More questions
+- Sound effects when if you answer correctly or incorrectly.
+- Navbar with one or two more pages where you can watch Goals and read about the Champions League.
+
 ## Technologies Used
+
+### Balsamiq
+
+- Used to design and choose what the page will look like before starting with the coding.
+
+### HTML
+
+- Used to add structure and content to the site.
+### CSS
+
+- Used to ads styling to the HTML.
+### JavaScript
+
+- Used to add functions to the website, so the user can click on buttons and see effects on the site.
+
+### VS code
+
+- Used to create the code, content for the repository and to push it to GitHub.
+
+### GitHub
+
+- Used to save the repository and deploy the website.
 
 ## Testing
 
@@ -105,7 +129,11 @@ The Champions League website is made up from a single page and it’s hiding the
 
 #### HTML
 
+![htmltest](assets/images/readme-images/readme-test/htmltest.png)
+
 #### CSS
+
+![CSSTEST](assets/images/readme-images/readme-test/csstest.png)
 
 #### JS
 
@@ -119,11 +147,33 @@ The Champions League website is made up from a single page and it’s hiding the
 
 ### Known Bugs
 
-#### Solved Bugs
+#### Resolved
+
+During code validation, these warnings were shown:
+
+##### HTML
+
+- I missed having a heading in the article element.
+- THIS was solved by moving my Quiz Rules heading in to the article element.
+
+#### JavaScript
+
+- Misseing semicolon on some of the codes
+- Solved by adding semicolon to the missing codes.
 
 #### Unfixed Bugs
 
 ## Deployment
+
+The website was deployed to GitHub pages. Here is how you deploy on GitHub:
+
+1. In the GitHub repository, click on the setting tab.
+2. On the left side under the code and automation section, click on pages.
+3. Set branch as main and click save.
+4. The website will deploy after a few minutes. The link will be seen at the top of the page.
+   
+A live version of the website and the project can be accessed here:
+[Uefa Champions Leauge](https://balennouri.github.io/balennouri-project2/index.html)
 
 ## Credit
 
