@@ -115,7 +115,7 @@ The Champions League website is made up from a single page and it’s hiding the
 - Featured at the top and center of the page the user will see the header that is the Champions League logo.
 - The header is above the welcome section and the game area.
 - The header is always visible.
-- The header is linked with home page so if user click on the Champions League logo(header) the website will refresh.
+- The header is linked with home page so if user want to quit the quiz they just need to click on the Champions League logo(header).
 
 ### Welcome/Rules section
 
