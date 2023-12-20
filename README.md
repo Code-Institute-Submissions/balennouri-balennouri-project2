@@ -141,11 +141,7 @@ Features to be added in the future:
 
 ### Lighthouse Testing
 
-#### Welcome page
-
-#### Game page
-
-#### Result page
+![lighthousetest](assets/images/readme-images/readme-test/lhtestwelcome.png)
 
 ### Known Bugs
 
