@@ -174,7 +174,9 @@ function showQuestion(index) {
     answerButtonsElement.innerHTML = option_tag;
     const optionsButtons = answerButtonsElement.querySelectorAll(".answer-button");
     for (let i = 0; i < optionsButtons.length; i++) {
-        optionsButtons[i].setAttribute("onclick", "optionSelected(this)");
+        optionsButtons[i].addEventListener("click", function () {
+            optionSelected(optionsButtons[i])
+        });
     }
 }
 
