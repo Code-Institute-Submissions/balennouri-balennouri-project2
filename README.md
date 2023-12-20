@@ -131,7 +131,8 @@ The Champions League website is made up from a single page and it’s hiding the
 - In this section the user see the question.
 - the time the user have left.
 - Four answers buttons.
-- When the user answer one of the options the next question bottom gets activated.
+- When the user answers one of the options, the user will see if they answer correctly or correctly.
+- When the user answer one of the options, the next question button gets activated.
 
 ### Result area
 
