@@ -191,10 +191,8 @@ function optionSelected(answer) {
     if (userAns == correctAns) {
         userScore += 1;
         answer.classList.add("correct-btn");
-        console.log("correct answer");
     } else {
         answer.classList.add("wrong-btn");
-        console.log("wrong answer");
 
         /**
          * If answer is incorrect then show the correct answer automatically.
@@ -232,7 +230,6 @@ function nextQueBtn() {
         startTimer(timeValue);
         nextQuizBtn.style.display = "none";
     } else {
-        console.log("Questions completed");
         showResultbox();
     }
 }
