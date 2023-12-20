@@ -1,6 +1,6 @@
 # Uefa Champions Leauge
 
-This quiz is for users who want to learn more about the Champions League history or just want to play a quiz game and test their knowledge. So go in and test yourself, play the quiz and see how many of the questions you can answer correctly. Enjoy and good luck!
+This quiz game is for users who want to test their knowledge of the Champions League history or just want to play a quiz game. So go in and test yourself, play the quiz and see how many of the questions you can answer correctly. Enjoy and good luck!  
 
 A live version of the website and the project can be accessed here:
 [Uefa Champions Leauge](https://balennouri.github.io/balennouri-project2/index.html)
