@@ -175,7 +175,7 @@ function showQuestion(index) {
     const optionsButtons = answerButtonsElement.querySelectorAll(".answer-button");
     for (let i = 0; i < optionsButtons.length; i++) {
         optionsButtons[i].addEventListener("click", function () {
-            optionSelected(optionsButtons[i])
+            optionSelected(optionsButtons[i]);
         });
     }
 }
