@@ -1,6 +1,6 @@
 # Uefa Champions Leauge
 
-This quiz game is for users who want to test their knowledge of the Champions League history or just want to play a quiz game. So go in and test yourself, play the quiz and see how many of the questions you can answer correctly. Enjoy and good luck!  
+This quiz game is for users who want to test their knowledge of the Champions League history or just want to play a quiz game. So jump in on the website and test yourself, play the quiz and see how many of the questions you can answer correctly. Enjoy and good luck!  
 
 A live version of the website and the project can be accessed here:
 [Uefa Champions Leauge](https://balennouri.github.io/balennouri-project2/index.html)
@@ -121,7 +121,7 @@ The Champions League website is made up from a single page and it’s hiding the
 
 ![Welcome](assets/images/readme-images/welcomerules.png)
 
-- In this section the user get welcomed and can read about the quiz rules.
+- In this section the user get welcomed and can read the rules for the quiz.
 - Under the rules, the user can click on the start button to start the quiz.
 
 ### Quiz area
@@ -131,6 +131,7 @@ The Champions League website is made up from a single page and it’s hiding the
 - In this section the user see the question.
 - the time the user have left.
 - Four answers buttons.
+- When the user answer one of the options the next question bottom gets activated.
 
 ### Result area
 
