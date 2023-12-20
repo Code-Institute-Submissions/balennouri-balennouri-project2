@@ -213,6 +213,12 @@ During code validation, these warnings were shown:
 
 #### JavaScript Warnings
 
+Warning:
+
+![jshint1](assets/images/readme-images/readme-test/jsbugs.png)
+
+soloution:
+
 - Misseing semicolon on some of the codes.
 - Solved by adding semicolon to the missing codes.
 
