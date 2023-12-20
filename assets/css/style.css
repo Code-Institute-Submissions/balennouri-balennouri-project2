@@ -331,6 +331,7 @@ h1 h3 {
     justify-content: center;
     gap: 85%;
     font-size: xx-large;
+    width: 50px;
 }
 
 #social-list i {
