@@ -153,8 +153,8 @@ The Champions League website is made up from a single page and it’s hiding the
 Features to be added in the future:
 
 - More questions
-- Sound effects when if you answer correctly or incorrectly.
-- Navbar with one or two more pages where you can watch Goals and read about the Champions League.
+- Sound effects when if the user answer correctly or incorrectly.
+- Navbar with one or two more pages where the user can watch Goals and read about the Champions League.
 
 ## Technologies Used
 
@@ -209,14 +209,16 @@ During code validation, these warnings were shown:
 ##### HTML Warnings
 
 - I missed having a heading in the article element.
-- THIS was solved by moving my Quiz Rules heading in to the article element.
+- This was solved by moving my Quiz Rules heading in to the article element.
 
 #### JavaScript Warnings
 
-- Misseing semicolon on some of the codes
+- Misseing semicolon on some of the codes.
 - Solved by adding semicolon to the missing codes.
 
 #### Unfixed Bugs
+
+No unfixed bugs.
 
 ## Deployment
 
