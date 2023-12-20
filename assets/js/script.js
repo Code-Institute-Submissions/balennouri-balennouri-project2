@@ -1,4 +1,4 @@
-// Get elements by id
+// Get elements by id and queryselector
 
 const welcomeRules = document.getElementById('welcome-rules');
 const quizArea = document.getElementById('quiz-area');
