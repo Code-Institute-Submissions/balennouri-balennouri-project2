@@ -187,7 +187,7 @@ function showQuestion(index) {
 
 function optionSelected(answer) {
     clearInterval(timeCounter);
-    let userAns = answer.innerText;
+    let userAns = answer.textContent;
     let correctAns = questions[questionNumber].answer;
     let alloptions = answerButtonsElement.children.length;
     if (userAns == correctAns) {
@@ -201,7 +201,7 @@ function optionSelected(answer) {
          */
 
         for (let i = 0; i < alloptions; i++) {
-            if (answerButtonsElement.children[i].innerText == correctAns) {
+            if (answerButtonsElement.children[i].textContent == correctAns) {
                 answerButtonsElement.children[i].classList.add("correct-btn");
             }
         }
@@ -302,7 +302,7 @@ function startTimer(time) {
             let alloptions = answerButtonsElement.children.length;
 
             for (let i = 0; i < alloptions; i++) {
-                if (answerButtonsElement.children[i].innerText == correctAns) {
+                if (answerButtonsElement.children[i].textContent == correctAns) {
                     answerButtonsElement.children[i].classList.add("correct-btn");
                 }
             }
