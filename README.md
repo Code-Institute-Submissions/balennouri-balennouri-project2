@@ -108,9 +108,11 @@ Features to be added in the future:
 ### HTML
 
 - Used to add structure and content to the site.
+
 ### CSS
 
 - Used to ads styling to the HTML.
+
 ### JavaScript
 
 - Used to add functions to the website, so the user can click on buttons and see effects on the site.
@@ -127,15 +129,15 @@ Features to be added in the future:
 
 ### Validator Testing
 
-#### HTML
+#### HTML Test
 
 ![htmltest](assets/images/readme-images/readme-test/htmltest.png)
 
-#### CSS
+#### CSS Test
 
 ![CSSTEST](assets/images/readme-images/readme-test/csstest.png)
 
-#### JS
+#### JavaScript Test
 
 ### Lighthouse Testing
 
@@ -151,12 +153,12 @@ Features to be added in the future:
 
 During code validation, these warnings were shown:
 
-##### HTML
+##### HTML Warnings
 
 - I missed having a heading in the article element.
 - THIS was solved by moving my Quiz Rules heading in to the article element.
 
-#### JavaScript
+#### JavaScript Warnings
 
 - Misseing semicolon on some of the codes
 - Solved by adding semicolon to the missing codes.
@@ -171,7 +173,7 @@ The website was deployed to GitHub pages. Here is how you deploy on GitHub:
 2. On the left side under the code and automation section, click on pages.
 3. Set branch as main and click save.
 4. The website will deploy after a few minutes. The link will be seen at the top of the page.
-   
+
 A live version of the website and the project can be accessed here:
 [Uefa Champions Leauge](https://balennouri.github.io/balennouri-project2/index.html)
 
