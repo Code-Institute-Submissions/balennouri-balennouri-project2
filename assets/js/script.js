@@ -11,7 +11,7 @@ const quit_quiz = document.querySelector('.quit-quiz-btn');
 
 // questions for the quiz
 
-let questions = [{
+const questions = [{
     numb: 1,
     question: "Which player has scored the most goals in Champions League history?",
     answer: "Cristiano Ronaldo",
