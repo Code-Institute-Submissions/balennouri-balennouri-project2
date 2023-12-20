@@ -58,6 +58,10 @@ A live version of the website and the project can be accessed here:
 
 This website is ment for:
 
+- Users who follows the Champions Leaugue.
+- Users who love football.
+- Users who like to play quiz games.
+
 ### User Stories
 
 As a user of this website:
@@ -117,13 +121,23 @@ The Champions League website is made up from a single page and it’s hiding the
 
 ![Welcome](assets/images/readme-images/welcomerules.png)
 
+- In this section the user get welcomed and can read about the quiz rules.
+- Under the rules, the user can click on the start button to start the quiz.
+
 ### Quiz area
 
 ![Quiz](assets/images/readme-images/gamearea.png)
 
+- In this section the user see the question.
+- the time the user have left.
+- Four answers buttons.
+
 ### Result area
 
 ![Result](assets/images/readme-images/result.box.png)
+
+- In the result area the user see their score.
+- The user get two options if they want to quit or restart the quiz.
 
 ### Social Media Section
 
