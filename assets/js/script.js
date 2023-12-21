@@ -8,6 +8,7 @@ const nextQuizBtn = document.getElementById('next-question-btn');
 const timeCount = document.querySelector('.timer_sec');
 const result_box = document.querySelector('.result-box');
 const quit_quiz = document.querySelector('.quit-quiz-btn');
+const restartBtn = document.querySelector('.restart-quiz-btn');
 
 // questions for the quiz
 
@@ -130,8 +131,16 @@ const questions = [{
  * when you click on the quit button it reload the page.
  */
 
+restartBtn.onclick = () => {
+  startGame();
+};
+
 quit_quiz.onclick = () => {
     window.location.reload();
+};
+
+nextQuizBtn.onclick = () => {
+  nextQueBtn();
 };
 
 // variables to be defined
@@ -143,6 +152,7 @@ let timeValue = 15;
 let userScore = 0;
 
 // Quiz game structure
+
 
 /**
  * StartGame function hide the welcome rules page when you click the start quiz button.
