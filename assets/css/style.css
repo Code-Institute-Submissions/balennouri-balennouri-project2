@@ -62,7 +62,6 @@ i {
     flex-direction: column;
 }
 
-
 .logo {
     background-color: #40689a;
     border-radius: 20px;
@@ -217,7 +216,6 @@ h1 h3 {
     box-shadow: 0 0 10px #ffffff;
 }
 
-
 #next-question-btn {
     display: none;
     padding: 10px;
@@ -230,7 +228,6 @@ h1 h3 {
     box-shadow: 0 0 10px #ffffff;
     margin-bottom: 10px;
 }
-
 
 #answer-btn-area {
     display: flex;
@@ -255,7 +252,6 @@ h1 h3 {
     height: 40px;
     margin-bottom: 20px;
 }
-
 
 .wrong-btn {
     background-color: rgba(255, 0, 0, 0.449);
@@ -315,9 +311,8 @@ h1 h3 {
     margin-top: 10px;
 }
 
-
-
 /*Social media links for CL accounts*/
+
 #social-media {
     display: flex;
     text-align: center;
