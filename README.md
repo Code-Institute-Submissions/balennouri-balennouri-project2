@@ -78,15 +78,15 @@ As a user of this website:
 
 ### Desktop
 
-![Welcome and Rules](docs/readme-images/readme-wf/wfdatawelcome.png)
+![Welcome and Rules](docs/readme-images/readme-wf/wf-datawelcome.png)
 
-![Quiz/ game area](docs/readme-images/readme-wf/wfdataquizarea.png)
+![Quiz/ game area](docs/readme-images/readme-wf/wf-dataquizarea.png)
 
-![Result box area](docs/readme-images/readme-wf/wfdataresult.png)
+![Result box area](docs/readme-images/readme-wf/wf-dataresult.png)
 
 ### Mobile
 
-![Welcome,quiz and result](docs/readme-images/readme-wf/wfmobil.png)
+![Welcome,quiz and result](docs/readme-images/readme-wf/wf-mobil.png)
 
 ## Design
 
@@ -190,17 +190,17 @@ Features to be added in the future:
 
 #### HTML Test
 
-![htmltest](docs/readme-images/readme-test/htmltest.png)
+![htmltest](docs/readme-images/readme-test/html-test.png)
 
 #### CSS Test
 
-![CSSTEST](docs/readme-images/readme-test/csstest.png)
+![CSSTEST](docs/readme-images/readme-test/css-test.png)
 
 #### JavaScript Test
 
 ### Lighthouse Testing
 
-![lighthousetest](docs/readme-images/readme-test/lhtestwelcome.png)
+![lighthousetest](docs/readme-images/readme-test/lh-test-welcome.png)
 
 ### Known Bugs
 
@@ -217,7 +217,7 @@ During code validation, these warnings were shown:
 
 Warning:
 
-![jshint1](docs/readme-images/readme-test/jsbugs.png)
+![jshint1](docs/readme-images/readme-test/js-bugs.png)
 
 soloution:
 
