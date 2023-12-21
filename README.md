@@ -155,7 +155,7 @@ The Champions League website is made up from a single page and it’s hiding the
 Features to be added in the future:
 
 - More questions
-- Sound effects when if the user answer correctly or incorrectly.
+- Sound effects when the user answer correctly or incorrectly.
 - Navbar with one or two more pages where the user can watch Goals and read about the Champions League.
 
 ## Technologies Used
