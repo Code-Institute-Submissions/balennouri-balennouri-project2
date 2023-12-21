@@ -1,4 +1,4 @@
-// Get elements by id and queryselector
+// global variables
 
 const welcomeRules = document.getElementById('welcome-rules');
 const quizArea = document.getElementById('quiz-area');
@@ -17,7 +17,6 @@ let que_numb = 1;
 let timeCounter;
 let timeValue = 15;
 let userScore = 0;
-
 
 /**
  * when you click on the quit button it reload the page.
@@ -78,7 +77,7 @@ function optionSelected(answer) {
   clearInterval(timeCounter);
   let userAns = answer.textContent;
   let correctAns = questions[questionNumber].answer;
-  let alloptions = answerButtonsElement.children.length;
+  let allOptions = answerButtonsElement.children.length;
   if (userAns == correctAns) {
     userScore += 1;
     answer.classList.add("correct-btn");
@@ -88,7 +87,7 @@ function optionSelected(answer) {
     /**
      * If answer is incorrect then show the correct answer automatically.
      */
-    for (let i = 0; i < alloptions; i++) {
+    for (let i = 0; i < allOptions; i++) {
       if (answerButtonsElement.children[i].textContent == correctAns) {
         answerButtonsElement.children[i].classList.add("correct-btn");
       }
@@ -98,7 +97,7 @@ function optionSelected(answer) {
   /**
    *  Once the player/user selected a option, disabled all the other questions.
    */
-  for (let i = 0; i < alloptions; i++) {
+  for (let i = 0; i < allOptions; i++) {
     answerButtonsElement.children[i].classList.add("disabled");
   }
 
@@ -155,7 +154,6 @@ function showResultbox() {
 /**
  * Clock on the quiz
  */
-
 function startTimer(time) {
   timeCounter = setInterval(timer, 1000);
 
@@ -167,7 +165,6 @@ function startTimer(time) {
      * Add zero when the time become 9 or lower.
      * Clear time and stop on 00 when the time is finnish 
      */
-
     if (time < 9) {
       let addzero = timeCount.innerText;
       timeCount.innerText = "0" + addzero;
@@ -182,14 +179,14 @@ function startTimer(time) {
        * Also so you cant make a choose after the time is finnish.
        */
       let correctAns = questions[questionNumber].answer;
-      let alloptions = answerButtonsElement.children.length;
+      let allOptions = answerButtonsElement.children.length;
 
-      for (let i = 0; i < alloptions; i++) {
+      for (let i = 0; i < allOptions; i++) {
         if (answerButtonsElement.children[i].textContent == correctAns) {
           answerButtonsElement.children[i].classList.add("correct-btn");
         }
       }
-      for (let i = 0; i < alloptions; i++) {
+      for (let i = 0; i < allOptions; i++) {
         answerButtonsElement.children[i].classList.add("disabled");
       }
 
