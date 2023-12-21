@@ -56,10 +56,10 @@ function startGame() {
  */
 function showQuestion(index) {
   let que_tag = '<span>' + questions[index].numb + '. ' + questions[index].question + '</span>';
-  let option_tag = '<button class="answer-button">' + questions[index].options[0] + '<span></span></button>' +
-    '<button class="answer-button">' + questions[index].options[1] + '<span></span></button>' +
-    '<button class="answer-button">' + questions[index].options[2] + '<span></span></button>' +
-    '<button class="answer-button">' + questions[index].options[3] + '<span></span></button>';
+  let option_tag = '<button class="answer-button">' + questions[index].options[0] + '</button>' +
+    '<button class="answer-button">' + questions[index].options[1] + '</button>' +
+    '<button class="answer-button">' + questions[index].options[2] + '</button>' +
+    '<button class="answer-button">' + questions[index].options[3] + '</button>';
   questionElement.innerHTML = que_tag;
   answerButtonsElement.innerHTML = option_tag;
   const optionsButtons = answerButtonsElement.querySelectorAll(".answer-button");
