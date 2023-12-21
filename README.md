@@ -41,6 +41,8 @@ A live version of the website and the project can be accessed here:
       - [CSS Test](#css-test)
       - [JavaScript Test](#javascript-test)
     - [Lighthouse Testing](#lighthouse-testing)
+      - [Desktop Lighthouse Test](#desktop-lighthouse-test)
+      - [Mobile  Lighthouse Test](#mobile--lighthouse-test)
     - [Known Bugs](#known-bugs)
       - [Resolved](#resolved)
         - [HTML Warnings](#html-warnings)
@@ -200,7 +202,13 @@ Features to be added in the future:
 
 ### Lighthouse Testing
 
-![lighthousetest](docs/readme-images/readme-test/lh-test-welcome.png)
+#### Desktop Lighthouse Test
+
+![Lighthouse desktop](docs/readme-images/readme-test/lh-desktop.png)
+
+#### Mobile  Lighthouse Test
+
+![lighthousetest mobile](docs/readme-images/readme-test/lh-test-welcome.png)
 
 ### Known Bugs
 
@@ -218,8 +226,6 @@ During code validation, these warnings were shown:
 Warning:
 
 ![jshint1](docs/readme-images/readme-test/js-bugs.png)
-
-soloution:
 
 - Misseing semicolon on some of the codes.
 - Solved by adding semicolon to the missing codes.
