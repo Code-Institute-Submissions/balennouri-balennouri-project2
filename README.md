@@ -67,12 +67,12 @@ This website is ment for:
 As a user of this website:
 
 - Test my knowledge in Champions League with the quiz.
-- Be able to start the quiz and see the rules for the quiz.
-- See my result after all the questions.
-- See the time i have and have left.
+- Be able to see the rules and start the quiz button.
+- See the timmer on each question.
 - See if i answer correctly or wrong after I chose an answer.
-- Be able to restart the game after all the questions.
 - Be able to quit the game after the questions or in the middle of the quiz.
+- See my result after all the questions.
+- Be able to restart the game after all the questions.
 
 ## Wireframes
 
@@ -90,7 +90,7 @@ As a user of this website:
 
 ## Design
 
-The website has a clean layout with the Champions League colors and the logo as a header for the website. When you come in on the website you see the logo, the rules for the quiz and the start button. Underneath the game area, in the foot area, you can see my social media links.
+The website has a clean layout with the Champions League colors and the logo as a header for the website. When you come in on the website you see the logo, the rules for the quiz and the start button. Underneath the game area, on the bottom of the page, you can see my social media links.
 
 ### Colours
 
