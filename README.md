@@ -5,7 +5,7 @@ This quiz game is for users who want to test their knowledge of the Champions Le
 A live version of the website and the project can be accessed here:
 [Uefa Champions Leauge](https://balennouri.github.io/balennouri-project2/index.html)
 
-![imresponsive](assets/images/readme-images/respnisv.png)
+![imresponsive](docs/readme-images/respnisv.png)
 
 ## Table Of Contents
 
@@ -78,15 +78,15 @@ As a user of this website:
 
 ### Desktop
 
-![Welcome and Rules](assets/images/readme-images/readme-wf/wfdatawelcome.png)
+![Welcome and Rules](docs/readme-images/readme-wf/wfdatawelcome.png)
 
-![Quiz/ game area](assets/images/readme-images/readme-wf/wfdataquizarea.png)
+![Quiz/ game area](docs/readme-images/readme-wf/wfdataquizarea.png)
 
-![Result box area](assets/images/readme-images/readme-wf/wfdataresult.png)
+![Result box area](docs/readme-images/readme-wf/wfdataresult.png)
 
 ### Mobile
 
-![Welcome,quiz and result](assets/images/readme-images/readme-wf/wfmobil.png)
+![Welcome,quiz and result](docs/readme-images/readme-wf/wfmobil.png)
 
 ## Design
 
@@ -96,7 +96,7 @@ The website has a clean layout with the Champions League colors and the logo as 
 
 The colors used for the website were mainly chosen from the colors that the Champions League use. The colors and the logo are very important. When the user jumps on to the website, they will get a feeling of the Champions League because of the right colors and the logo.
 
-![colour-pallete](assets/images/readme-images/color.png)
+![colour-pallete](docs/readme-images/color.png)
 
 ### Typography
 
@@ -110,7 +110,7 @@ The Champions League website is made up from a single page and it’s hiding the
 
 ### Header
 
-![header](assets/images/readme-images/header.png)
+![header](docs/readme-images/header.png)
 
 - Featured at the top and center of the page the user will see the header that is the Champions League logo.
 - The header is above the welcome section and the game area.
@@ -119,14 +119,14 @@ The Champions League website is made up from a single page and it’s hiding the
 
 ### Welcome/Rules section
 
-![Welcome](assets/images/readme-images/welcomerules.png)
+![Welcome](docs/readme-images/welcomerules.png)
 
 - In this section the user get welcomed and can read the rules for the quiz.
 - Under the rules, the user can click on the start button to start the quiz.
 
 ### Quiz area
 
-![Quiz](assets/images/readme-images/gamearea.png)
+![Quiz](docs/readme-images/gamearea.png)
 
 - In this section the user see the question.
 - the time the user have left.
@@ -136,14 +136,14 @@ The Champions League website is made up from a single page and it’s hiding the
 
 ### Result area
 
-![Result](assets/images/readme-images/result.box.png)
+![Result](docs/readme-images/result.box.png)
 
 - In the result area the user see their score.
 - The user get two options if they want to quit or restart the quiz.
 
 ### Social Media Section
 
-![Social media](assets/images/readme-images/footer.png)
+![Social media](docs/readme-images/footer.png)
 
 - Underneath the welcome and the game area the user will see the social media icons and who have made the quiz.
 - There are three social media icons, Instagram, LinkedIn and GitHub.
@@ -190,17 +190,17 @@ Features to be added in the future:
 
 #### HTML Test
 
-![htmltest](assets/images/readme-images/readme-test/htmltest.png)
+![htmltest](docs/readme-images/readme-test/htmltest.png)
 
 #### CSS Test
 
-![CSSTEST](assets/images/readme-images/readme-test/csstest.png)
+![CSSTEST](docs/readme-images/readme-test/csstest.png)
 
 #### JavaScript Test
 
 ### Lighthouse Testing
 
-![lighthousetest](assets/images/readme-images/readme-test/lhtestwelcome.png)
+![lighthousetest](docs/readme-images/readme-test/lhtestwelcome.png)
 
 ### Known Bugs
 
@@ -217,7 +217,7 @@ During code validation, these warnings were shown:
 
 Warning:
 
-![jshint1](assets/images/readme-images/readme-test/jsbugs.png)
+![jshint1](docs/readme-images/readme-test/jsbugs.png)
 
 soloution:
 
