@@ -70,7 +70,7 @@ As a user of this website:
 
 - Test my knowledge in Champions League with the quiz.
 - Be able to see the rules and start the quiz button.
-- See the timmer on each question.
+- See the timer on each question.
 - See if i answer correctly or wrong after I chose an answer.
 - Be able to quit the game after the questions or in the middle of the quiz.
 - See my result after all the questions.
@@ -172,7 +172,7 @@ Features to be added in the future:
 
 ### CSS
 
-- Used to ads styling to the HTML.
+- Used to add styling to the HTML.
 
 ### JavaScript
 
