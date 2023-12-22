@@ -46,7 +46,7 @@ A live version of the website and the project can be accessed here:
     - [Known Bugs](#known-bugs)
       - [Resolved](#resolved)
         - [HTML Warnings](#html-warnings)
-      - [JavaScript Warnings](#javascript-warnings)
+      - [JavaScript Warnings and Bugs](#javascript-warnings-and-bugs)
       - [Unfixed Bugs](#unfixed-bugs)
   - [Deployment](#deployment)
   - [Credit](#credit)
@@ -221,14 +221,26 @@ During code validation, these warnings were shown:
 - I missed having a heading in the article element.
 - This was solved by moving my Quiz Rules heading in to the article element.
 
-#### JavaScript Warnings
+#### JavaScript Warnings and Bugs
 
-Warning:
+- Removed unused variables.
+- Add semicolons to the missing ones.
+
+This bug was the most troublesome one to fix. I got some help from the slack community and my mentor and the best solution was to do like I did below here.
+
+- I tested one that also worked, but the application didn't work correctly on safari and that was a problem. You can see that one below here.
+
+![jshint1](docs/readme-images/readme-test/js-bugs3.png)
+
+- I changed it to this below.
 
 ![jshint1](docs/readme-images/readme-test/js-bugs.png)
 
-- Misseing semicolon on some of the codes.
-- Solved by adding semicolon to the missing codes.
+- Then i got a warning as you se on the image above. To remove the warning, I changed the "for loop" to "forEach" loop as you see below.
+
+![jshint1](docs/readme-images/readme-test/js-bugs2.png)
+
+- This solved the safari bug and removed the warning.
 
 #### Unfixed Bugs
 
@@ -251,9 +263,10 @@ A live version of the website and the project can be accessed here:
 ### Content And Code
 
 - The icons used on the social media were taken from [Font Awesome.](https://fontawesome.com)
+- To generate my favicon image, I did it on [Favicon.](https://favicon.io/)
 - The screenshot at the top of the ReadMe was built from [Ami Responsive.](https://ui.dev/amiresponsive)
-- The wireframes for the ReadMe were made by [Balsamiq](https://balsamiq.com/)
-- I got a lot of my soloutions to my JavaScript file in this youtube [video.](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1282s&ab_channel=WebDevSimplified)
+- The wireframes for the ReadMe were made by [Balsamiq.](https://balsamiq.com/)
+- I got a lot of my soloutions to my JavaScript file in this youtube [video.](https://youtube.com/watch?v=f4fB9Xg2JEY&si=5UgWm1sU6dtm6Xxd)
 
 ## Logo And Questions
 
