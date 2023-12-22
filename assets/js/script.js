@@ -1,4 +1,4 @@
-// global variables
+// Dom element references
 
 const welcomeRules = document.getElementById('welcome-rules');
 const quizArea = document.getElementById('quiz-area');
@@ -10,7 +10,7 @@ const result_box = document.querySelector('.result-box');
 const quit_quiz = document.querySelector('.quit-quiz-btn');
 const restartBtn = document.querySelector('.restart-quiz-btn');
 
-// variables to be defined
+// Global variables
 
 let questionNumber = 0;
 let que_numb = 1;
@@ -62,11 +62,11 @@ function showQuestion(index) {
   questionElement.innerHTML = que_tag;
   answerButtonsElement.innerHTML = option_tag;
   const optionsButtons = answerButtonsElement.querySelectorAll(".answer-button");
-  for (let i = 0; i < optionsButtons.length; i++) {
-    optionsButtons[i].addEventListener("click", function () {
-      optionSelected(optionsButtons[i]);
+  optionsButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      optionSelected(button);
     });
-  }
+  });
 }
 
 /**
